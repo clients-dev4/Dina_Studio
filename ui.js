@@ -90,3 +90,48 @@
         updSim();
     }
 })();
+
+(function () {
+    var zone = document.querySelector('.dn-visuel[data-modes]');
+    if (!zone) return;
+    var modes;
+    try { modes = JSON.parse(zone.getAttribute('data-modes')); } catch (e) { return; }
+    var images = zone.querySelectorAll('.dn-robot-img');
+    var notices = zone.querySelectorAll('.dn-notice');
+    var label = zone.querySelector('.dn-mode-pilule b');
+    var points = zone.querySelectorAll('.dn-point');
+    var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    var actuel = 0, minuteur = null;
+
+    function affiche(n) {
+        if (n === actuel) return;
+        actuel = n;
+        images.forEach(function (img, i) { img.classList.toggle('actif', i === n); });
+        points.forEach(function (pt, i) { pt.classList.toggle('actif', i === n); });
+        label.textContent = modes[n].label;
+        notices.forEach(function (el) { el.classList.add('dn-change'); });
+        setTimeout(function () {
+            notices.forEach(function (el, i) {
+                var c = modes[n].cartes[i];
+                if (!c) return;
+                el.querySelector('strong').textContent = c[0];
+                el.querySelector('small').textContent = c[1];
+                el.classList.remove('dn-change');
+            });
+        }, 250);
+    }
+    function lance() {
+        if (reduce || minuteur) return;
+        minuteur = setInterval(function () { affiche((actuel + 1) % modes.length); }, 4000);
+    }
+    function arrete() { clearInterval(minuteur); minuteur = null; }
+
+    zone.style.pointerEvents = 'auto';
+    points.forEach(function (pt, i) {
+        pt.addEventListener('click', function () { arrete(); affiche(i); lance(); });
+    });
+    zone.addEventListener('mouseenter', arrete);
+    zone.addEventListener('mouseleave', lance);
+    document.addEventListener('visibilitychange', function () { document.hidden ? arrete() : lance(); });
+    lance();
+})();

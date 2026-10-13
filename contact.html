@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact — Dina Studio</title>
+    <meta name="description" content="Décrivez votre projet à Dina Studio : publicité en ligne, contenus pour les réseaux sociaux, automatisation ou agents IA. Réponse par e-mail ou par téléphone.">
+    <link rel="canonical" href="https://dina-studio.fr/contact.html"/>
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Contact — Dina Studio">
+    <meta property="og:description" content="Décrivez votre projet à Dina Studio : publicité en ligne, contenus pour les réseaux sociaux, automatisation ou agents IA. Réponse par e-mail ou par téléphone.">
+    <meta property="og:url" content="https://dina-studio.fr/contact.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" type="image/png" sizes="192x192" href="./logo/icon-192x192.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="ent-header">
+        <div class="container">
+            <a href="index.html" class="ent-logo" aria-label="Dina Studio"><span class="ent-logo-text">Dina<span>Studio</span></span></a>
+            <nav class="ent-nav">
+                <a href="index.html">Accueil</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#methode">Méthode</a>
+                <a href="index.html#faq">Questions</a>
+            </nav>
+            <div class="ent-actions">
+                <a href="contact.html" class="btn btn-primary">Parler de mon projet</a>
+            </div>
+            <button class="ent-burger" id="entBurger" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <div class="ent-drawer" id="entDrawer">
+        <div class="ent-drawer-head">
+            <span class="ent-logo-text">Dina<span>Studio</span></span>
+            <button class="ent-drawer-close" id="entDrawerClose" aria-label="Fermer">&times;</button>
+        </div>
+        <nav class="ent-drawer-nav">
+            <a href="index.html">Accueil</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#methode">Méthode</a>
+                <a href="index.html#faq">Questions</a>
+        </nav>
+        <div class="ent-drawer-foot">
+            <a href="contact.html" class="btn btn-primary ent-drawer-partner">Parler de mon projet</a>
+        </div>
+    </div>
+    <div class="ent-drawer-backdrop" id="entDrawerBackdrop"></div>
+
+    <nav class="ent-bottom-nav">
+        <a href="index.html" class="ent-bn-item"><span class="ent-bn-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></span><span class="ent-bn-label">Accueil</span></a>
+        <a href="index.html#services" class="ent-bn-item"><span class="ent-bn-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></span><span class="ent-bn-label">Services</span></a>
+        <a href="contact.html" class="ent-bn-item"><span class="ent-bn-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></span><span class="ent-bn-label">Contact</span></a>
+    </nav>
+
+    <section class="contact-page contact-nav">
+        <div class="container" style="max-width: 800px;">
+            <div class="contact-header">
+                <h1>Parlons de <span>votre projet</span></h1>
+                <p>Quelques lignes suffisent. On vous répond par e-mail ou par téléphone, avec une proposition concrète.</p>
+            </div>
+
+            <div class="form-card">
+                <form id="contactForm" action="https://webprime.app/webhook/contact/bc024c6a49270fbd5c6410130a36f4a25f54b1d8af00affb5697d01be039f033" method="POST" novalidate>
+                    <div class="hp-wrap">
+                        <label for="website">Votre site web :</label>
+                        <input type="text" id="website" name="_honey" autocomplete="off" tabindex="-1">
+                    </div>
+
+                    <div class="form-page active">
+                        <div class="form-group">
+                            <label for="nom">Prénom et nom <span class="required">*</span></label>
+                            <input type="text" id="nom" name="nom" placeholder="Prénom Nom" autocomplete="name" required>
+                            <div class="error-msg">Veuillez indiquer votre nom</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="entreprise">Entreprise</label>
+                            <input type="text" id="entreprise" name="entreprise" placeholder="Nom de votre entreprise" autocomplete="organization">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">E-mail <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" placeholder="vous@votre-entreprise.fr" autocomplete="email" required>
+                            <div class="error-msg">Veuillez indiquer un e-mail valide</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="telephone">Téléphone</label>
+                            <input type="tel" id="telephone" name="telephone" placeholder="06 00 00 00 00" autocomplete="tel">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="service">Service qui vous intéresse</label>
+                            <select id="service" name="service">
+                                <option value="Publicité en ligne">Publicité en ligne</option>
+                                <option value="Contenus réseaux sociaux">Contenus réseaux sociaux</option>
+                                <option value="Automatisation des processus">Automatisation des processus</option>
+                                <option value="Agents IA pour entreprise">Agents IA pour entreprise</option>
+                                <option value="Visibilité dans les IA (GEO)">Visibilité dans les IA (GEO)</option>
+                                <option value="Je ne sais pas encore">Je ne sais pas encore</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Votre message <span class="required">*</span></label>
+                            <textarea id="message" name="message" placeholder="Votre métier, ce que vous voulez améliorer, vos délais…" required></textarea>
+                            <div class="error-msg">Veuillez écrire quelques mots sur votre projet</div>
+                        </div>
+
+                        <div class="form-buttons">
+                            <button type="submit" class="btn-submit">Envoyer ma demande</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <p class="ent-note">Vous préférez écrire directement ? <a href="mailto:daelia.partners@gmail.com">daelia.partners@gmail.com</a></p>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <span class="ent-logo-text">Dina<span>Studio</span></span>
+                    <p>L'agence qui s'occupe de vos publicités, de vos publications et de vos tâches répétitives. Pour les petites et moyennes entreprises, partout en France.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="publicite-en-ligne.html">Publicité en ligne</a></li>
+                        <li><a href="contenus-reseaux-sociaux.html">Contenus réseaux sociaux</a></li>
+                        <li><a href="automatisation-processus.html">Automatisation des processus</a></li>
+                        <li><a href="agents-ia-entreprise.html">Agents IA pour entreprise</a></li>
+                        <li><a href="visibilite-ia-geo.html">Visibilité dans les IA (GEO)</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>L'agence</h4>
+                    <ul>
+                        <li><a href="index.html#methode">Notre méthode</a></li>
+                        <li><a href="index.html#pour-qui">Pour qui</a></li>
+                        <li><a href="index.html#faq">Questions fréquentes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:daelia.partners@gmail.com">daelia.partners@gmail.com</a></li>
+                        <li><a href="contact.html">Parler de mon projet</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Dina Studio 2026 - Tous droits réservés · <a href="mentions-legales.html" style="color:inherit;">Mentions légales</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var entDrawer = document.getElementById('entDrawer');
+        var entBackdrop = document.getElementById('entDrawerBackdrop');
+        function openDrawer() { entDrawer.classList.add('open'); entBackdrop.classList.add('open'); }
+        function closeDrawer() { entDrawer.classList.remove('open'); entBackdrop.classList.remove('open'); }
+        document.getElementById('entBurger').addEventListener('click', openDrawer);
+        document.getElementById('entDrawerClose').addEventListener('click', closeDrawer);
+        entBackdrop.addEventListener('click', closeDrawer);
+        entDrawer.querySelectorAll('a').forEach(function (a) {
+            a.addEventListener('click', closeDrawer);
+        });
+        var obs = new IntersectionObserver(function (entries) {
+            entries.forEach(function (e) {
+                if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); }
+            });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.reveal').forEach(function (el) { obs.observe(el); });
+    </script>
+    <script>
+        (function () {
+            var form = document.getElementById('contactForm');
+            function valide() {
+                var ok = true;
+                form.querySelectorAll('[required]').forEach(function (el) {
+                    var bon = el.value.trim() !== '';
+                    if (bon && el.type === 'email') bon = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(el.value.trim());
+                    el.closest('.form-group').classList.toggle('error', !bon);
+                    if (!bon) ok = false;
+                });
+                return ok;
+            }
+            form.querySelectorAll('input, textarea').forEach(function (el) {
+                el.addEventListener('input', function () { this.closest('.form-group') && this.closest('.form-group').classList.remove('error'); });
+            });
+            form.addEventListener('submit', function (e) {
+                e.preventDefault();
+                var honeyField = form.querySelector('[name="_honey"]');
+                if (honeyField && honeyField.value) return false;
+                if (!valide()) {
+                    var premier = form.querySelector('.form-group.error');
+                    if (premier) premier.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                    return false;
+                }
+                var btn = form.querySelector('.btn-submit');
+                btn.textContent = 'Envoi en cours...';
+                btn.disabled = true;
+                var nom = (form.querySelector('[name="nom"]') || {}).value || '';
+                var entreprise = (form.querySelector('[name="entreprise"]') || {}).value || '';
+                var email = (form.querySelector('[name="email"]') || {}).value || '';
+                var tel = (form.querySelector('[name="telephone"]') || {}).value || '';
+                var service = (form.querySelector('[name="service"]') || {}).value || '';
+                var message = (form.querySelector('[name="message"]') || {}).value || '';
+                var webhookData = new FormData();
+                webhookData.append('name', nom);
+                webhookData.append('email', email);
+                webhookData.append('tel', tel);
+                webhookData.append('service', service);
+                webhookData.append('message', 'Entreprise : ' + (entreprise || 'non renseignee')
+                    + '\nTelephone : ' + (tel || 'non renseigne')
+                    + '\nService demande : ' + service
+                    + '\n\n' + message);
+                var p1 = fetch('https://webprime.app/webhook/contact/bc024c6a49270fbd5c6410130a36f4a25f54b1d8af00affb5697d01be039f033', {
+                    method: 'POST',
+                    body: webhookData,
+                    keepalive: true
+                }).catch(function () {});
+                var shown = false;
+                var showThanks = function () {
+                    if (shown) return;
+                    shown = true;
+                    window.location.href = 'merci.html';
+                };
+                Promise.allSettled([p1]).then(showThanks);
+                setTimeout(showThanks, 3000);
+                return false;
+            });
+        })();
+    </script>
+    <script src="ui.js"></script>
+</body>
+</html>

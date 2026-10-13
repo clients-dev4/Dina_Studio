@@ -55,7 +55,7 @@
             "name": "ChatGPT va-t-il forcément recommander mon entreprise ?",
             "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Non. Aucun prestataire ne peut garantir qu'une IA citera une entreprise. On travaille sur ce qui est maîtrisable : la clarté, la cohérence et l'accessibilité de vos informations."
+                "text": "Non, et méfiez-vous de ceux qui le promettent : nul ne décide de ce qu'une IA répond. On travaille sur ce qui est maîtrisable : la clarté, la cohérence et l'accessibilité de vos informations."
             }
         },
         {
@@ -97,7 +97,7 @@
                 <a href="index.html#faq">Questions</a>
             </nav>
             <div class="ent-actions">
-                <a href="#contact" class="btn btn-primary">Parler de mon projet</a>
+                <a href="contact.html" class="btn btn-primary">Parler de mon projet</a>
             </div>
             <button class="ent-burger" id="entBurger" aria-label="Menu"><span></span><span></span><span></span></button>
         </div>
@@ -115,7 +115,7 @@
                 <a href="index.html#faq">Questions</a>
         </nav>
         <div class="ent-drawer-foot">
-            <a href="#contact" class="btn btn-primary ent-drawer-partner">Parler de mon projet</a>
+            <a href="contact.html" class="btn btn-primary ent-drawer-partner">Parler de mon projet</a>
         </div>
     </div>
     <div class="ent-drawer-backdrop" id="entDrawerBackdrop"></div>
@@ -123,17 +123,31 @@
     <nav class="ent-bottom-nav">
         <a href="index.html" class="ent-bn-item"><span class="ent-bn-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></span><span class="ent-bn-label">Accueil</span></a>
         <a href="index.html#services" class="ent-bn-item"><span class="ent-bn-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></span><span class="ent-bn-label">Services</span></a>
-        <a href="#contact" class="ent-bn-item"><span class="ent-bn-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></span><span class="ent-bn-label">Contact</span></a>
+        <a href="contact.html" class="ent-bn-item"><span class="ent-bn-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></span><span class="ent-bn-label">Contact</span></a>
     </nav>
 
-    <section class="ent-hero">
+    <section class="ent-hero dn-hero">
         <div class="container">
+            <div class="dn-texte">
             <h1 class="ent-eyebrow">Visibilité dans les IA · GEO</h1>
             <h2 class="ent-hero-title">Quand un client interroge une IA,<br><span>qu'elle parle de vous.</span></h2>
             <p>De plus en plus de clients posent leurs questions à une IA avant de choisir un professionnel. On rend les informations de votre entreprise claires, cohérentes et faciles à reprendre dans ces réponses.</p>
             <div class="ent-cta-row">
-                <a href="#contact" class="btn btn-primary">Parler de mon projet</a>
+                <a href="contact.html" class="btn btn-primary">Parler de mon projet</a>
                 <a href="#prestations" class="btn btn-ghost">Voir ce qu'on fait</a>
+            </div>
+            </div>
+            <div class="dn-visuel" aria-hidden="true">
+                <div class="dn-orbites"><span></span><span></span><span></span><i></i><i></i><i></i></div>
+                <div class="dn-robot">
+                    <img src="robot/robot-visibilite.webp" alt="" width="600" height="900" class="dn-robot-img actif">
+                </div>
+                <div class="dn-notice dn-n1"><span class="dn-pastille"></span><span class="dn-notice-texte"><strong>Test du lundi</strong><small>Trois assistants interrogés</small></span></div>
+                <div class="dn-notice dn-n2"><span class="dn-pastille"></span><span class="dn-notice-texte"><strong>Fiche à jour</strong><small>Les mêmes infos partout</small></span></div>
+                <div class="dn-notice dn-n3"><span class="dn-pastille"></span><span class="dn-notice-texte"><strong>Votre nom ressort</strong><small>Dans une réponse de Gemini</small></span></div>
+                <div class="dn-mode">
+                    <div class="dn-mode-pilule"><span class="dn-pastille-ronde"></span>Mode : <b>Visibilité dans les IA</b></div>
+                </div>
             </div>
         </div>
     </section>
@@ -244,7 +258,7 @@
             <h2 class="reveal">Ce qu'on <span>nous demande</span></h2>
             <div class="ent-faq">
                 <details class="reveal"><summary>Qu&#x27;est-ce que le GEO ?</summary><p>C&#x27;est le travail qui aide les assistants IA à comprendre votre entreprise et à en parler correctement dans leurs réponses.</p></details>
-                <details class="reveal"><summary>ChatGPT va-t-il forcément recommander mon entreprise ?</summary><p>Non. Aucun prestataire ne peut garantir qu&#x27;une IA citera une entreprise. On travaille sur ce qui est maîtrisable : la clarté, la cohérence et l&#x27;accessibilité de vos informations.</p></details>
+                <details class="reveal"><summary>ChatGPT va-t-il forcément recommander mon entreprise ?</summary><p>Non, et méfiez-vous de ceux qui le promettent : nul ne décide de ce qu&#x27;une IA répond. On travaille sur ce qui est maîtrisable : la clarté, la cohérence et l&#x27;accessibilité de vos informations.</p></details>
                 <details class="reveal"><summary>Faut-il un site internet ?</summary><p>Oui, c&#x27;est la base. Les IA s&#x27;appuient sur des pages publiques. Si votre site est incomplet, on commence par le remettre au clair.</p></details>
                 <details class="reveal"><summary>Suffit-il d&#x27;ajouter du balisage technique au site ?</summary><p>Non. Elles aident, mais il faut aussi des contenus clairs et des informations identiques partout où votre entreprise est présentée.</p></details>
                 <details class="reveal"><summary>Comment savoir si ça progresse ?</summary><p>On pose régulièrement les mêmes questions aux assistants IA et on compare leurs réponses dans le temps. Vous recevez un compte rendu simple.</p></details>
@@ -266,7 +280,7 @@
                 <div class="ent-card ent-levier reveal">
                     <div class="ico">🎬</div>
                     <h3>Contenus réseaux sociaux</h3>
-                    <p>Reels animés, carrousels, posts et visuels à vos couleurs, sans tournage. Vous validez, vous publiez.</p>
+                    <p>Des vidéos courtes animées, des carrousels et des images à vos couleurs, créés sans caméra. Il ne vous reste qu&#x27;à publier.</p>
                     <a href="contenus-reseaux-sociaux.html" class="btn btn-ghost">En savoir plus →</a>
                 </div>
                 <div class="ent-card ent-levier reveal">
@@ -278,7 +292,7 @@
                 <div class="ent-card ent-levier reveal">
                     <div class="ico">🤖</div>
                     <h3>Agents IA pour entreprise</h3>
-                    <p>Des assistants qui trient les demandes, lisent vos documents et préparent le travail de votre équipe, sous votre contrôle.</p>
+                    <p>Des assistants qui trient les demandes, lisent vos documents et avancent le travail de vos salariés, sous votre contrôle.</p>
                     <a href="agents-ia-entreprise.html" class="btn btn-ghost">En savoir plus →</a>
                 </div>
             </div>
@@ -290,7 +304,7 @@
             <h2 class="reveal">Que disent les IA de votre entreprise ?</h2>
             <p class="reveal">Donnez-nous votre nom et votre métier. On regarde ce que répondent les assistants et on vous dit quoi améliorer.</p>
             <div class="ent-cta-row reveal">
-                <a href="mailto:contact@dina-studio.fr" class="btn btn-primary">contact@dina-studio.fr</a>
+                <a href="contact.html" class="btn btn-primary">Parler de mon projet</a>
                 <a href="index.html#services" class="btn btn-ghost">Voir tous les services</a>
             </div>
             <div class="ent-guar reveal">
@@ -307,7 +321,7 @@
             <div class="footer-grid">
                 <div class="footer-col">
                     <span class="ent-logo-text">Dina<span>Studio</span></span>
-                    <p>Publicité en ligne, contenus pour les réseaux sociaux, automatisation et agents IA pour les TPE et PME, partout en France.</p>
+                    <p>L'agence qui s'occupe de vos publicités, de vos publications et de vos tâches répétitives. Pour les petites et moyennes entreprises, partout en France.</p>
                 </div>
                 <div class="footer-col">
                     <h4>Services</h4>
@@ -330,8 +344,8 @@
                 <div class="footer-col">
                     <h4>Contact</h4>
                     <ul>
-                        <li><a href="mailto:contact@dina-studio.fr">contact@dina-studio.fr</a></li>
-                        <li><a href="#contact">Parler de mon projet</a></li>
+                        <li><a href="mailto:daelia.partners@gmail.com">daelia.partners@gmail.com</a></li>
+                        <li><a href="contact.html">Parler de mon projet</a></li>
                     </ul>
                 </div>
             </div>
