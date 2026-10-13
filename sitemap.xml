@@ -7,7 +7,7 @@
         <priority>1.0</priority>
     </url>
     <url>
-        <loc>https://dina-studio.fr/contenus-reseaux-sociaux.html</loc>
+        <loc>https://dina-studio.fr/gestion-reseaux-sociaux.html</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
@@ -25,13 +25,13 @@
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://dina-studio.fr/publicite-en-ligne.html</loc>
+        <loc>https://dina-studio.fr/agence-google-ads.html</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://dina-studio.fr/sites-web-applications.html</loc>
+        <loc>https://dina-studio.fr/developpement-logiciel-sur-mesure.html</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
@@ -49,19 +49,19 @@
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://dina-studio.fr/agents-ia-entreprise.html</loc>
+        <loc>https://dina-studio.fr/intelligence-artificielle-entreprise.html</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://dina-studio.fr/formations.html</loc>
+        <loc>https://dina-studio.fr/formation-intelligence-artificielle.html</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
     </url>
     <url>
-        <loc>https://dina-studio.fr/audit-conseil.html</loc>
+        <loc>https://dina-studio.fr/audit-site-web.html</loc>
         <lastmod>2026-10-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.9</priority>
@@ -71,5 +71,47 @@
         <lastmod>2026-10-13</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.7</priority>
+    </url>
+    <url>
+        <loc>https://dina-studio.fr/audit-seo.html</loc>
+        <lastmod>2026-10-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://dina-studio.fr/audit-google-ads.html</loc>
+        <lastmod>2026-10-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://dina-studio.fr/conseil-marketing-digital.html</loc>
+        <lastmod>2026-10-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://dina-studio.fr/strategie-reseaux-sociaux.html</loc>
+        <lastmod>2026-10-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://dina-studio.fr/google-ads-prix.html</loc>
+        <lastmod>2026-10-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://dina-studio.fr/assistant-intelligence-artificielle.html</loc>
+        <lastmod>2026-10-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://dina-studio.fr/creation-site-internet.html</loc>
+        <lastmod>2026-10-13</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
     </url>
 </urlset>

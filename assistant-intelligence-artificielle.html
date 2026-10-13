@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assistant intelligence artificielle pour votre entreprise — Dina Studio</title>
+    <meta name="description" content="Dina Studio crée des assistants d&#x27;intelligence artificielle pour les TPE et PME : un assistant relié à vos documents, qui répond à votre équipe et prépare vos réponses, sous votre contrôle.">
+    <link rel="canonical" href="https://dina-studio.fr/assistant-intelligence-artificielle.html"/>
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Assistant intelligence artificielle pour votre entreprise — Dina Studio">
+    <meta property="og:description" content="Dina Studio crée des assistants d&#x27;intelligence artificielle pour les TPE et PME : un assistant relié à vos documents, qui répond à votre équipe et prépare vos réponses, sous votre contrôle.">
+    <meta property="og:url" content="https://dina-studio.fr/assistant-intelligence-artificielle.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" type="image/png" sizes="256x256" href="./logo/favicon-256x256.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Assistant intelligence artificielle",
+    "serviceType": "Assistant intelligence artificielle",
+    "provider": {
+        "@type": "ProfessionalService",
+        "name": "Dina Studio",
+        "url": "https://dina-studio.fr"
+    },
+    "areaServed": {
+        "@type": "Country",
+        "name": "France"
+    },
+    "description": "Dina Studio crée des assistants d'intelligence artificielle pour les TPE et PME : un assistant relié à vos documents, qui répond à votre équipe et prépare vos réponses, sous votre contrôle.",
+    "url": "https://dina-studio.fr/assistant-intelligence-artificielle.html",
+    "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Services assistant intelligence artificielle",
+        "itemListElement": [
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Assistant personnel intelligence artificielle" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Intelligence artificielle assistant" } },
+            { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Intelligence artificielle assistant personnel" } }
+        ]
+    }
+}
+    </script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Quelle différence avec ChatGPT ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "ChatGPT répond d'après ses connaissances générales. Votre assistant répond d'après vos documents, avec les accès que vous lui donnez, et il est réglé pour votre métier."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Quelle différence avec un agent IA ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "L'assistant répond quand on lui pose une question. L'agent traite une tâche de bout en bout : trier une boîte e-mail, lire une pile de factures. Les deux se complètent."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "L'assistant a-t-il accès à tous nos fichiers ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Non, seulement à ceux que vous autorisez. On définit précisément les dossiers et les outils auxquels il a accès."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "L'assistant peut-il se tromper ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oui, comme tout outil d'intelligence artificielle. C'est pourquoi une personne relit avant tout envoi, et que la prise en main insiste sur les cas où il ne faut pas s'y fier."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Mon équipe saura-t-elle s'en servir ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "On montre l'outil à chaque utilisateur, on fournit un mode d'emploi simple et on ajuste l'assistant pendant les premières semaines."
+            }
+        }
+    ]
+}
+    </script>
+</head>
+<body>
+    <header class="ent-header">
+        <div class="container">
+            <a href="https://dina-studio.fr/" class="ent-logo" aria-label="Dina Studio"><span class="ent-logo-text">Dina<span>Studio</span></span></a>
+            <nav class="ent-nav">
+                <a href="https://dina-studio.fr/">Accueil</a>
+                <a href="https://dina-studio.fr/#services">Services</a>
+                <a href="https://dina-studio.fr/#methode">Méthode</a>
+                <a href="https://dina-studio.fr/#faq">Questions</a>
+            </nav>
+            <div class="ent-actions">
+                <a href="#devis" class="btn btn-primary">Parler de mon projet</a>
+            </div>
+            <button class="ent-burger" id="entBurger" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <div class="ent-drawer" id="entDrawer">
+        <div class="ent-drawer-head">
+            <span class="ent-logo-text">Dina<span>Studio</span></span>
+            <button class="ent-drawer-close" id="entDrawerClose" aria-label="Fermer">&times;</button>
+        </div>
+        <nav class="ent-drawer-nav">
+            <a href="https://dina-studio.fr/">Accueil</a>
+                <a href="https://dina-studio.fr/#services">Services</a>
+                <a href="https://dina-studio.fr/#methode">Méthode</a>
+                <a href="https://dina-studio.fr/#faq">Questions</a>
+        </nav>
+        <div class="ent-drawer-foot">
+            <a href="#devis" class="btn btn-primary ent-drawer-partner">Parler de mon projet</a>
+        </div>
+    </div>
+    <div class="ent-drawer-backdrop" id="entDrawerBackdrop"></div>
+
+    <nav class="ent-bottom-nav">
+        <a href="https://dina-studio.fr/" class="ent-bn-item"><span class="ent-bn-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></span><span class="ent-bn-label">Accueil</span></a>
+        <a href="https://dina-studio.fr/#services" class="ent-bn-item"><span class="ent-bn-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></span><span class="ent-bn-label">Services</span></a>
+        <a href="#devis" class="ent-bn-item"><span class="ent-bn-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></span><span class="ent-bn-label">Contact</span></a>
+    </nav>
+
+    <section class="ent-hero dn-hero">
+        <div class="container">
+            <div class="dn-texte">
+            <h1 class="ent-eyebrow">Assistant IA · Intelligence artificielle pour votre équipe</h1>
+            <h2 class="ent-hero-title">Un assistant qui connaît<br><span>votre entreprise par cœur.</span></h2>
+            <p>Un assistant d&#x27;intelligence artificielle à qui vos salariés posent leurs questions en français courant. Il cherche dans vos procédures, vos tarifs et vos modèles de documents, puis répond ou prépare un brouillon. C&#x27;est toujours une personne qui valide.</p>
+            <div class="ent-cta-row">
+                <a href="#devis" class="btn btn-primary">Parler de mon projet</a>
+                <a href="#prestations" class="btn btn-ghost">Voir ce qu'on fait</a>
+            </div>
+            </div>
+            <div class="dn-visuel" aria-hidden="true">
+                <div class="dn-orbites"><span></span><span></span><span></span><i></i><i></i><i></i></div>
+                <div class="dn-robot">
+                    <img src="robot/robot-agents.webp" alt="" width="600" height="900" class="dn-robot-img actif">
+                </div>
+                <div class="dn-notice dn-n1"><span class="dn-pastille"></span><span class="dn-notice-texte"><strong>Question de l&#x27;équipe</strong><small>Posée en français courant</small></span></div>
+                <div class="dn-notice dn-n2"><span class="dn-pastille"></span><span class="dn-notice-texte"><strong>Réponse trouvée</strong><small>Dans votre procédure interne</small></span></div>
+                <div class="dn-notice dn-n3"><span class="dn-pastille"></span><span class="dn-notice-texte"><strong>Brouillon prêt</strong><small>En attente de votre accord</small></span></div>
+                <div class="dn-mode">
+                    <div class="dn-mode-pilule"><span class="dn-pastille-ronde"></span>Mode : <b>Assistant IA</b></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ent-section">
+        <div class="container ent-center">
+            <span class="ent-eyebrow reveal">C'est quoi ?</span>
+            <h2 class="reveal">Un assistant <span>d&#x27;intelligence artificielle</span></h2>
+            <p class="ent-lead reveal">Un assistant personnel d&#x27;intelligence artificielle ressemble aux outils grand public comme ChatGPT, à une différence près : il s&#x27;appuie sur les documents de votre entreprise. Il ne répond pas « en général », il répond d&#x27;après vos tarifs, vos procédures et vos dossiers. Vos salariés gagnent le temps passé à chercher une information ou à repartir d&#x27;une page blanche.</p>
+        </div>
+    </section>
+
+    <section class="ent-section ent-white" id="prestations">
+        <div class="container ent-center">
+            <span class="ent-eyebrow reveal">Ce qu&#x27;il fait</span>
+            <h2 class="reveal">Un assistant pour <span>le quotidien</span></h2>
+            <div class="ent-grid cols-3">
+                <div class="ent-card reveal">
+                    <div class="ico">💬</div>
+                    <h3>Répondre à l&#x27;équipe</h3>
+                    <p>Une question sur une procédure, un tarif ou un client : il retrouve la réponse dans vos documents.</p>
+                </div>
+                <div class="ent-card reveal">
+                    <div class="ico">✍️</div>
+                    <h3>Préparer des brouillons</h3>
+                    <p>E-mails, courriers, comptes rendus : un premier jet à relire plutôt qu&#x27;une page blanche.</p>
+                </div>
+                <div class="ent-card reveal">
+                    <div class="ico">📄</div>
+                    <h3>Résumer des documents</h3>
+                    <p>Un contrat, un appel d&#x27;offres, un long échange d&#x27;e-mails : l&#x27;essentiel en quelques lignes.</p>
+                </div>
+                <div class="ent-card reveal">
+                    <div class="ico">🔌</div>
+                    <h3>Relié à vos outils</h3>
+                    <p>Il travaille à partir des documents et des outils que vous lui ouvrez, là où sont déjà vos informations.</p>
+                </div>
+                <div class="ent-card reveal">
+                    <div class="ico">🔒</div>
+                    <h3>Garde-fous</h3>
+                    <p>On définit ses accès, ses limites et les actions soumises à validation humaine.</p>
+                </div>
+                <div class="ent-card reveal">
+                    <div class="ico">🎓</div>
+                    <h3>Prise en main</h3>
+                    <p>On montre à votre équipe comment lui parler, et dans quels cas ne pas s&#x27;y fier.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ent-section">
+        <div class="container ent-center">
+            <span class="ent-eyebrow reveal">Dans votre métier</span>
+            <h2 class="reveal">Trois exemples <span>concrets</span></h2>
+            <div class="ent-grid cols-3">
+                <div class="ent-card reveal">
+                    <div class="ico">🧑‍💼</div>
+                    <h3>Intérim et recrutement</h3>
+                    <p>« Quels candidats ont déjà travaillé en logistique ? » Il parcourt vos fiches et vous sort la liste.</p>
+                </div>
+                <div class="ent-card reveal">
+                    <div class="ico">⚖️</div>
+                    <h3>Avocats et experts-comptables</h3>
+                    <p>Il retrouve le bon modèle de lettre de mission et le prépare avec les éléments du dossier.</p>
+                </div>
+                <div class="ent-card reveal">
+                    <div class="ico">🧹</div>
+                    <h3>Sociétés de nettoyage</h3>
+                    <p>Un chef d&#x27;équipe cherche les consignes d&#x27;un site client : il les obtient sur son téléphone.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ent-section ent-white">
+        <div class="container ent-center">
+            <span class="ent-eyebrow reveal">La méthode</span>
+            <h2 class="reveal">Comment <span>on procède</span></h2>
+            <div class="ent-grid cols-4 ent-steps">
+                <div class="ent-card ent-step reveal" data-num="01">
+                    <div class="num">01</div>
+                    <h3>Repérer les questions</h3>
+                    <p>Celles qui reviennent chaque semaine et font perdre du temps.</p>
+                </div>
+                <div class="ent-card ent-step reveal" data-num="02">
+                    <div class="num">02</div>
+                    <h3>Rassembler les documents</h3>
+                    <p>Procédures, tarifs, modèles : ce que l&#x27;assistant aura le droit de consulter.</p>
+                </div>
+                <div class="ent-card ent-step reveal" data-num="03">
+                    <div class="num">03</div>
+                    <h3>Tester avec l&#x27;équipe</h3>
+                    <p>Sur de vraies questions, pour corriger ce qui sonne faux.</p>
+                </div>
+                <div class="ent-card ent-step reveal" data-num="04">
+                    <div class="num">04</div>
+                    <h3>Former et régler</h3>
+                    <p>Prise en main, puis ajustements après quelques semaines d&#x27;usage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ent-section" id="faq">
+        <div class="container ent-center">
+            <span class="ent-eyebrow reveal">Questions fréquentes</span>
+            <h2 class="reveal">Ce qu'on <span>nous demande</span></h2>
+            <div class="ent-faq">
+                <details class="reveal"><summary>Quelle différence avec ChatGPT ?</summary><p>ChatGPT répond d&#x27;après ses connaissances générales. Votre assistant répond d&#x27;après vos documents, avec les accès que vous lui donnez, et il est réglé pour votre métier.</p></details>
+                <details class="reveal"><summary>Quelle différence avec un agent IA ?</summary><p>L&#x27;assistant répond quand on lui pose une question. L&#x27;agent traite une tâche de bout en bout : trier une boîte e-mail, lire une pile de factures. Les deux se complètent.</p></details>
+                <details class="reveal"><summary>L&#x27;assistant a-t-il accès à tous nos fichiers ?</summary><p>Non, seulement à ceux que vous autorisez. On définit précisément les dossiers et les outils auxquels il a accès.</p></details>
+                <details class="reveal"><summary>L&#x27;assistant peut-il se tromper ?</summary><p>Oui, comme tout outil d&#x27;intelligence artificielle. C&#x27;est pourquoi une personne relit avant tout envoi, et que la prise en main insiste sur les cas où il ne faut pas s&#x27;y fier.</p></details>
+                <details class="reveal"><summary>Mon équipe saura-t-elle s&#x27;en servir ?</summary><p>On montre l&#x27;outil à chaque utilisateur, on fournit un mode d&#x27;emploi simple et on ajuste l&#x27;assistant pendant les premières semaines.</p></details>
+            </div>
+        </div>
+    </section>
+
+    <section class="ent-section ent-white dn-devis" id="devis">
+        <div class="container ent-center" style="max-width: 800px;">
+            <span class="ent-eyebrow reveal">Votre demande</span>
+            <h2 class="reveal">Quelles questions lui confier ?</h2>
+            <p class="ent-lead reveal">Décrivez-nous les questions qui reviennent le plus dans votre équipe. On vous dit ce qu&#x27;un assistant peut en faire.</p>
+            <div class="form-card">
+                <form class="dn-form" action="https://webprime.app/webhook/contact/bc024c6a49270fbd5c6410130a36f4a25f54b1d8af00affb5697d01be039f033" method="POST" data-service="Assistant intelligence artificielle" novalidate>
+                    <div class="hp-wrap">
+                        <label for="website">Votre site web :</label>
+                        <input type="text" id="website" name="_honey" autocomplete="off" tabindex="-1">
+                    </div>
+
+                    <div class="form-page active">
+                        <div class="form-group">
+                            <label for="f-nom">Prénom et nom <span class="required">*</span></label>
+                            <input type="text" id="f-nom" name="nom" placeholder="Prénom Nom" autocomplete="name" required>
+                            <div class="error-msg">Veuillez indiquer votre nom</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="f-entreprise">Entreprise</label>
+                            <input type="text" id="f-entreprise" name="entreprise" placeholder="Nom de votre entreprise" autocomplete="organization">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="f-email">E-mail <span class="required">*</span></label>
+                            <input type="email" id="f-email" name="email" placeholder="vous@votre-entreprise.fr" autocomplete="email" required>
+                            <div class="error-msg">Veuillez indiquer un e-mail valide</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="f-telephone">Téléphone</label>
+                            <input type="tel" id="f-telephone" name="telephone" placeholder="06 00 00 00 00" autocomplete="tel">
+                            <div class="error-msg">Ce numéro ne semble pas valide (ex. : 06 12 34 56 78)</div>
+                        </div>
+
+                        <div class="form-group" data-label="Tâche à confier à l&#x27;agent">
+                            <label for="f-mission">Tâche à confier à l&#x27;agent</label>
+                            <select id="f-mission" name="mission">
+                                <option value="">Choisir…</option>
+                                <option value="Trier les demandes entrantes">Trier les demandes entrantes</option>
+                                <option value="Lire des documents">Lire des documents</option>
+                                <option value="Préparer des réponses">Préparer des réponses</option>
+                                <option value="Répondre aux questions de l&#x27;équipe">Répondre aux questions de l&#x27;équipe</option>
+                                <option value="Autre">Autre</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group" data-label="Volume par semaine">
+                            <label for="f-volume">Volume par semaine</label>
+                            <input type="text" id="f-volume" name="volume" placeholder="Ex. : 80 e-mails, 30 CV, 50 factures">
+                        </div>
+
+                        <div class="form-group" data-label="Les documents sont-ils confidentiels ?">
+                            <label for="f-sensible">Les documents sont-ils confidentiels ?</label>
+                            <select id="f-sensible" name="sensible">
+                                <option value="">Choisir…</option>
+                                <option value="Oui">Oui</option>
+                                <option value="Non">Non</option>
+                                <option value="Je ne sais pas encore">Je ne sais pas encore</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="f-message">Votre message</label>
+                            <textarea id="f-message" name="message" placeholder="Décrivez la tâche et ce que vous en attendez…"></textarea>
+                            <div class="error-msg">Veuillez écrire quelques mots sur votre projet</div>
+                        </div>
+
+                        <div class="form-buttons">
+                            <button type="submit" class="btn-submit">Décrire mon besoin</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="ent-section">
+        <div class="container ent-center">
+            <span class="ent-eyebrow reveal">Voir aussi</span>
+            <h2 class="reveal">Les autres <span>services</span></h2>
+            <div class="ent-grid cols-4">
+                <div class="ent-card ent-levier reveal">
+                    <div class="ico">🎬</div>
+                    <h3>Contenus réseaux sociaux</h3>
+                    <p>Des vidéos courtes animées, des carrousels et des images à vos couleurs, créés sans caméra. Il ne vous reste qu&#x27;à publier.</p>
+                    <a href="https://dina-studio.fr/gestion-reseaux-sociaux.html" class="btn btn-ghost">En savoir plus →</a>
+                </div>
+                <div class="ent-card ent-levier reveal">
+                    <div class="ico">🎞️</div>
+                    <h3>Motion design et vidéo</h3>
+                    <p>Vidéo de présentation, film publicitaire animé, logo qui prend vie : des images qui expliquent votre offre en quelques secondes.</p>
+                    <a href="https://dina-studio.fr/motion-design-video.html" class="btn btn-ghost">En savoir plus →</a>
+                </div>
+                <div class="ent-card ent-levier reveal">
+                    <div class="ico">📸</div>
+                    <h3>Photo et audio</h3>
+                    <p>Photos de vos produits, de vos locaux et de votre équipe, spots audio, voix et jingles : de quoi donner un visage et une voix à votre entreprise.</p>
+                    <a href="https://dina-studio.fr/photo-audio.html" class="btn btn-ghost">En savoir plus →</a>
+                </div>
+                <div class="ent-card ent-levier reveal">
+                    <div class="ico">🎯</div>
+                    <h3>Publicité en ligne</h3>
+                    <p>Campagnes Google Ads, Meta Ads et TikTok Ads : on crée les annonces, on règle le ciblage et on suit ce que chaque euro rapporte.</p>
+                    <a href="https://dina-studio.fr/agence-google-ads.html" class="btn btn-ghost">En savoir plus →</a>
+                </div>
+                <div class="ent-card ent-levier reveal">
+                    <div class="ico">💻</div>
+                    <h3>Sites web et applications</h3>
+                    <p>Site vitrine, boutique en ligne, application mobile ou outil interne : on conçoit, on développe et on maintient.</p>
+                    <a href="https://dina-studio.fr/developpement-logiciel-sur-mesure.html" class="btn btn-ghost">En savoir plus →</a>
+                </div>
+                <div class="ent-card ent-levier reveal">
+                    <div class="ico">✨</div>
+                    <h3>Visibilité dans les IA (GEO)</h3>
+                    <p>Faire en sorte que ChatGPT, Gemini et Perplexity comprennent votre entreprise et puissent la citer.</p>
+                    <a href="https://dina-studio.fr/visibilite-ia-geo.html" class="btn btn-ghost">En savoir plus →</a>
+                </div>
+                <div class="ent-card ent-levier reveal">
+                    <div class="ico">⚙️</div>
+                    <h3>Automatisation des processus</h3>
+                    <p>Devis, relances, rendez-vous, rappels : on relie vos outils pour que les tâches répétitives se fassent toutes seules.</p>
+                    <a href="https://dina-studio.fr/automatisation-processus.html" class="btn btn-ghost">En savoir plus →</a>
+                </div>
+                <div class="ent-card ent-levier reveal">
+                    <div class="ico">🤖</div>
+                    <h3>Agents IA pour entreprise</h3>
+                    <p>Des assistants qui trient les demandes, lisent vos documents et avancent le travail de vos salariés, sous votre contrôle.</p>
+                    <a href="https://dina-studio.fr/intelligence-artificielle-entreprise.html" class="btn btn-ghost">En savoir plus →</a>
+                </div>
+                <div class="ent-card ent-levier reveal">
+                    <div class="ico">🎓</div>
+                    <h3>Formations</h3>
+                    <p>IA, publicité en ligne, réseaux sociaux : des formations pratiques pour vous et vos équipes, sur place ou à distance.</p>
+                    <a href="https://dina-studio.fr/formation-intelligence-artificielle.html" class="btn btn-ghost">En savoir plus →</a>
+                </div>
+                <div class="ent-card ent-levier reveal">
+                    <div class="ico">🔬</div>
+                    <h3>Audit et conseil</h3>
+                    <p>On examine gratuitement vos publicités, vos outils ou votre présence en ligne, et on vous dit quoi corriger en premier.</p>
+                    <a href="https://dina-studio.fr/audit-site-web.html" class="btn btn-ghost">En savoir plus →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <span class="ent-logo-text">Dina<span>Studio</span></span>
+                    <p>L'agence qui s'occupe de vos publicités, de vos publications et de vos tâches répétitives. Pour les petites et moyennes entreprises, partout en France.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="https://dina-studio.fr/gestion-reseaux-sociaux.html">Contenus réseaux sociaux</a></li>
+                        <li><a href="https://dina-studio.fr/motion-design-video.html">Motion design et vidéo</a></li>
+                        <li><a href="https://dina-studio.fr/photo-audio.html">Photo et audio</a></li>
+                        <li><a href="https://dina-studio.fr/agence-google-ads.html">Publicité en ligne</a></li>
+                        <li><a href="https://dina-studio.fr/developpement-logiciel-sur-mesure.html">Sites web et applications</a></li>
+                        <li><a href="https://dina-studio.fr/visibilite-ia-geo.html">Visibilité dans les IA (GEO)</a></li>
+                        <li><a href="https://dina-studio.fr/automatisation-processus.html">Automatisation des processus</a></li>
+                        <li><a href="https://dina-studio.fr/intelligence-artificielle-entreprise.html">Agents IA pour entreprise</a></li>
+                        <li><a href="https://dina-studio.fr/formation-intelligence-artificielle.html">Formations</a></li>
+                        <li><a href="https://dina-studio.fr/audit-site-web.html">Audit et conseil</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>L'agence</h4>
+                    <ul>
+                        <li><a href="https://dina-studio.fr/#methode">Notre méthode</a></li>
+                        <li><a href="https://dina-studio.fr/#pour-qui">Pour qui</a></li>
+                        <li><a href="https://dina-studio.fr/#faq">Questions fréquentes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:daelia.partners@gmail.com">daelia.partners@gmail.com</a></li>
+                        <li><a href="#devis">Parler de mon projet</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Dina Studio 2026 - Tous droits réservés · <a href="https://dina-studio.fr/mentions-legales.html" style="color:inherit;">Mentions légales</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var entDrawer = document.getElementById('entDrawer');
+        var entBackdrop = document.getElementById('entDrawerBackdrop');
+        function openDrawer() { entDrawer.classList.add('open'); entBackdrop.classList.add('open'); }
+        function closeDrawer() { entDrawer.classList.remove('open'); entBackdrop.classList.remove('open'); }
+        document.getElementById('entBurger').addEventListener('click', openDrawer);
+        document.getElementById('entDrawerClose').addEventListener('click', closeDrawer);
+        entBackdrop.addEventListener('click', closeDrawer);
+        entDrawer.querySelectorAll('a').forEach(function (a) {
+            a.addEventListener('click', closeDrawer);
+        });
+        var obs = new IntersectionObserver(function (entries) {
+            entries.forEach(function (e) {
+                if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); }
+            });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.reveal').forEach(function (el) { obs.observe(el); });
+    </script>
+    <script src="ui.js"></script>
+</body>
+</html>
