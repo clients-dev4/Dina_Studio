@@ -2696,7 +2696,7 @@ a:focus-visible, button:focus-visible, .btn:focus-visible, input:focus-visible, 
 .dn-notice-texte { display: flex; flex-direction: column; line-height: 1.25; text-align: left; }
 .dn-notice-texte strong { font-size: 13px; font-weight: 700; color: var(--ink); }
 .dn-notice-texte small { font-size: 11.5px; color: var(--text-body); }
-.dn-mode { position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 10px; z-index: 2; }
+.dn-mode { position: absolute; left: 50%; bottom: 0; transform: translateX(-50%); display: flex; flex-direction: column; align-items: center; gap: 18px; z-index: 2; }
 .dn-mode-pilule { display: inline-flex; align-items: center; gap: 8px; padding: 8px 18px 8px 12px; background: #ffffff; border: 3px solid var(--ink); border-radius: 999px; box-shadow: var(--shadow-sm); font-size: 14px; font-weight: 600; color: var(--ink); white-space: nowrap; }
 .dn-mode-pilule b { color: var(--orange-ink); font-weight: 700; }
 .dn-pastille-ronde { width: 10px; height: 10px; border-radius: 50%; background: var(--primary-orange); }
@@ -2710,7 +2710,7 @@ a:focus-visible, button:focus-visible, .btn:focus-visible, input:focus-visible, 
     .dn-hero .ent-hero-title { font-size: 34px; }
     .dn-hero p { margin-left: auto; margin-right: auto; }
     .dn-hero .ent-cta-row { justify-content: center; }
-    .dn-visuel { height: 430px; max-width: 420px; width: 100%; margin: 0 auto; }
+    .dn-visuel { height: 440px; max-width: 420px; width: 100%; margin: 28px auto 0; }
     .dn-robot { width: 200px; height: 300px; top: 45%; }
     .dn-orbites span:nth-child(1) { width: 240px; height: 240px; }
     .dn-orbites span:nth-child(2) { width: 330px; height: 330px; }
