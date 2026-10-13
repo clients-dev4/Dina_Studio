@@ -2502,9 +2502,17 @@ a:hover {
 .ent-offer.featured { border-color: rgba(47,75,255,.6); transform: translateY(-6px) scale(1.02); overflow: visible;
     box-shadow: var(--shadow-md), 0 0 0 1px rgba(47,75,255,.22) inset, 0 0 42px rgba(47,75,255,.14); }
 .ent-offer.featured:hover { transform: translateY(-6px) scale(1.02); border-color: rgba(47,75,255,.6); }
-.ent-offer .badge { position: absolute; top: -12px; left: 50%; transform: translateX(-50%);
+.ent-offer .badge { position: absolute; top: -12px; left: 50%; right: auto; transform: translateX(-50%);
     background: var(--primary-orange); color: var(--on-accent); font-size:11px; font-weight:700; letter-spacing:.5px;
     text-transform: uppercase; padding: 5px 14px; border-radius: 999px; box-shadow: var(--shadow-sm); white-space: nowrap; }
+.ent-gestion { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: 10px 48px; align-items: center; margin-top: 30px; }
+.ent-gestion .tag { display: inline-block; }
+.ent-gestion ul { margin-bottom: 0; }
+.ent-gestion .ent-price { border-bottom: 0; padding-bottom: 0; margin-bottom: 20px; }
+@media (max-width: 768px) {
+    .ent-gestion { grid-template-columns: 1fr; }
+    .ent-gestion ul { margin-bottom: 22px; }
+}
 
 .ent-top { position: fixed; bottom: 24px; right: 24px; width: 48px; height: 48px; border-radius: 50%;
     background: var(--primary-orange); color: var(--on-accent); border: 3px solid var(--ink); cursor: pointer; z-index: 1500;
