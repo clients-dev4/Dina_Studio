@@ -135,3 +135,99 @@
     document.addEventListener('visibilitychange', function () { document.hidden ? arrete() : lance(); });
     lance();
 })();
+
+(function () {
+    var forms = document.querySelectorAll('form.dn-form');
+    if (!forms.length) return;
+
+    function telValide(v) {
+        var t = v.replace(/[\s.\-()]/g, '');
+        return /^((\+|00)33|0)[1-9]\d{8}$/.test(t) || /^(\+|00)[1-9]\d{7,14}$/.test(t);
+    }
+
+    forms.forEach(function (form) {
+        function valeur(nom) {
+            var el = form.querySelector('[name="' + nom + '"]');
+            return el ? el.value.trim() : '';
+        }
+        function valide() {
+            var ok = true;
+            form.querySelectorAll('input[type="text"], input[type="email"], input[type="tel"], textarea').forEach(function (el) {
+                var groupe = el.closest('.form-group');
+                if (!groupe) return;
+                var v = el.value.trim();
+                var bon = true;
+                if (el.required && v === '') bon = false;
+                if (bon && v !== '' && el.type === 'email') bon = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v);
+                if (bon && v !== '' && el.type === 'tel') bon = telValide(v);
+                groupe.classList.toggle('error', !bon);
+                if (!bon) ok = false;
+            });
+            return ok;
+        }
+        form.querySelectorAll('input, textarea, select').forEach(function (el) {
+            el.addEventListener('input', function () {
+                var groupe = el.closest('.form-group');
+                if (groupe) groupe.classList.remove('error');
+            });
+        });
+
+        form.addEventListener('submit', function (e) {
+            e.preventDefault();
+            var honeyField = form.querySelector('[name="_honey"]');
+            if (honeyField && honeyField.value) return false;
+            if (!valide()) {
+                var premier = form.querySelector('.form-group.error');
+                if (premier) premier.scrollIntoView({ behavior: 'smooth', block: 'center' });
+                return false;
+            }
+            var btn = form.querySelector('.btn-submit');
+            btn.textContent = 'Envoi en cours...';
+            btn.disabled = true;
+
+            var nom = valeur('nom');
+            var entreprise = valeur('entreprise');
+            var email = valeur('email');
+            var tel = valeur('telephone');
+            var service = form.getAttribute('data-service') || valeur('service');
+            var lignes = ['Service demande : ' + service,
+                          'Entreprise : ' + (entreprise || 'non renseignee'),
+                          'Telephone : ' + (tel || 'non renseigne')];
+            form.querySelectorAll('.form-group[data-label]').forEach(function (groupe) {
+                var cases = groupe.querySelectorAll('input[type="checkbox"]');
+                var v;
+                if (cases.length) {
+                    v = Array.prototype.filter.call(cases, function (c) { return c.checked; })
+                        .map(function (c) { return c.value; }).join(', ');
+                } else {
+                    var champ = groupe.querySelector('select, input, textarea');
+                    v = champ ? champ.value.trim() : '';
+                }
+                if (v) lignes.push(groupe.getAttribute('data-label') + ' : ' + v);
+            });
+            var message = valeur('message');
+
+            var webhookData = new FormData();
+            webhookData.append('name', nom);
+            webhookData.append('email', email);
+            webhookData.append('tel', tel);
+            webhookData.append('service', service);
+            webhookData.append('subject', 'Dina Studio - ' + service);
+            webhookData.append('message', lignes.join('\n') + (message ? '\n\n' + message : ''));
+            var p1 = fetch(form.getAttribute('action'), {
+                method: 'POST',
+                body: webhookData,
+                keepalive: true
+            }).catch(function () {});
+            var shown = false;
+            var showThanks = function () {
+                if (shown) return;
+                shown = true;
+                window.location.href = 'merci.html';
+            };
+            Promise.allSettled([p1]).then(showThanks);
+            setTimeout(showThanks, 3000);
+            return false;
+        });
+    });
+})();

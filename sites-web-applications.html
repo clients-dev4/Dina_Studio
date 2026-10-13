@@ -97,7 +97,7 @@
                 <a href="index.html#faq">Questions</a>
             </nav>
             <div class="ent-actions">
-                <a href="contact.html" class="btn btn-primary">Parler de mon projet</a>
+                <a href="#devis" class="btn btn-primary">Parler de mon projet</a>
             </div>
             <button class="ent-burger" id="entBurger" aria-label="Menu"><span></span><span></span><span></span></button>
         </div>
@@ -115,7 +115,7 @@
                 <a href="index.html#faq">Questions</a>
         </nav>
         <div class="ent-drawer-foot">
-            <a href="contact.html" class="btn btn-primary ent-drawer-partner">Parler de mon projet</a>
+            <a href="#devis" class="btn btn-primary ent-drawer-partner">Parler de mon projet</a>
         </div>
     </div>
     <div class="ent-drawer-backdrop" id="entDrawerBackdrop"></div>
@@ -123,7 +123,7 @@
     <nav class="ent-bottom-nav">
         <a href="index.html" class="ent-bn-item"><span class="ent-bn-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></span><span class="ent-bn-label">Accueil</span></a>
         <a href="index.html#services" class="ent-bn-item"><span class="ent-bn-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></span><span class="ent-bn-label">Services</span></a>
-        <a href="contact.html" class="ent-bn-item"><span class="ent-bn-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></span><span class="ent-bn-label">Contact</span></a>
+        <a href="#devis" class="ent-bn-item"><span class="ent-bn-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></span><span class="ent-bn-label">Contact</span></a>
     </nav>
 
     <section class="ent-hero dn-hero">
@@ -133,7 +133,7 @@
             <h2 class="ent-hero-title">Un site, une appli, un outil :<br><span>construits pour votre activité.</span></h2>
             <p>Un site qui donne envie de vous contacter, une application que vos clients gardent sur leur téléphone, un outil interne qui remplace trois tableurs. On s&#x27;occupe de la conception, du développement et de la suite.</p>
             <div class="ent-cta-row">
-                <a href="contact.html" class="btn btn-primary">Parler de mon projet</a>
+                <a href="#devis" class="btn btn-primary">Parler de mon projet</a>
                 <a href="#prestations" class="btn btn-ghost">Voir ce qu'on fait</a>
             </div>
             </div>
@@ -266,7 +266,86 @@
         </div>
     </section>
 
-    <section class="ent-section ent-white">
+    <section class="ent-section ent-white dn-devis" id="devis">
+        <div class="container ent-center" style="max-width: 800px;">
+            <span class="ent-eyebrow reveal">Votre demande</span>
+            <h2 class="reveal">Un projet de site ou d&#x27;application ?</h2>
+            <p class="ent-lead reveal">Décrivez-nous ce que vous voulez que vos clients ou vos équipes puissent faire. On vous répond avec une proposition et des étapes claires.</p>
+            <div class="form-card">
+                <form class="dn-form" action="https://webprime.app/webhook/contact/bc024c6a49270fbd5c6410130a36f4a25f54b1d8af00affb5697d01be039f033" method="POST" data-service="Sites web et applications" novalidate>
+                    <div class="hp-wrap">
+                        <label for="website">Votre site web :</label>
+                        <input type="text" id="website" name="_honey" autocomplete="off" tabindex="-1">
+                    </div>
+
+                    <div class="form-page active">
+                        <div class="form-group">
+                            <label for="f-nom">Prénom et nom <span class="required">*</span></label>
+                            <input type="text" id="f-nom" name="nom" placeholder="Prénom Nom" autocomplete="name" required>
+                            <div class="error-msg">Veuillez indiquer votre nom</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="f-entreprise">Entreprise</label>
+                            <input type="text" id="f-entreprise" name="entreprise" placeholder="Nom de votre entreprise" autocomplete="organization">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="f-email">E-mail <span class="required">*</span></label>
+                            <input type="email" id="f-email" name="email" placeholder="vous@votre-entreprise.fr" autocomplete="email" required>
+                            <div class="error-msg">Veuillez indiquer un e-mail valide</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="f-telephone">Téléphone</label>
+                            <input type="tel" id="f-telephone" name="telephone" placeholder="06 00 00 00 00" autocomplete="tel">
+                            <div class="error-msg">Ce numéro ne semble pas valide (ex. : 06 12 34 56 78)</div>
+                        </div>
+
+                        <div class="form-group" data-label="Type de projet">
+                            <label for="f-projet">Type de projet</label>
+                            <select id="f-projet" name="projet">
+                                <option value="">Choisir…</option>
+                                <option value="Site vitrine">Site vitrine</option>
+                                <option value="Boutique en ligne">Boutique en ligne</option>
+                                <option value="Application mobile">Application mobile</option>
+                                <option value="Outil métier">Outil métier</option>
+                                <option value="Refonte d&#x27;un site existant">Refonte d&#x27;un site existant</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group" data-label="Adresse de votre site actuel, si vous en avez un">
+                            <label for="f-site_actuel">Adresse de votre site actuel, si vous en avez un</label>
+                            <input type="text" id="f-site_actuel" name="site_actuel" placeholder="www.votre-site.fr">
+                        </div>
+
+                        <div class="form-group" data-label="Échéance souhaitée">
+                            <label for="f-echeance">Échéance souhaitée</label>
+                            <select id="f-echeance" name="echeance">
+                                <option value="">Choisir…</option>
+                                <option value="Dès que possible">Dès que possible</option>
+                                <option value="Dans un à trois mois">Dans un à trois mois</option>
+                                <option value="Dans plus de trois mois">Dans plus de trois mois</option>
+                                <option value="Pas de date précise">Pas de date précise</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="f-message">Votre message</label>
+                            <textarea id="f-message" name="message" placeholder="Ce que vos clients ou vos équipes doivent pouvoir faire…"></textarea>
+                            <div class="error-msg">Veuillez écrire quelques mots sur votre projet</div>
+                        </div>
+
+                        <div class="form-buttons">
+                            <button type="submit" class="btn-submit">Demander un devis</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="ent-section">
         <div class="container ent-center">
             <span class="ent-eyebrow reveal">Voir aussi</span>
             <h2 class="reveal">Les autres <span>services</span></h2>
@@ -329,23 +408,6 @@
         </div>
     </section>
 
-    <section class="ent-cta" id="contact">
-        <div class="container">
-            <h2 class="reveal">Un projet de site ou d&#x27;application ?</h2>
-            <p class="reveal">Décrivez-nous ce que vous voulez que vos clients ou vos équipes puissent faire. On vous répond avec une proposition et des étapes claires.</p>
-            <div class="ent-cta-row reveal">
-                <a href="contact.html" class="btn btn-primary">Parler de mon projet</a>
-                <a href="index.html#services" class="btn btn-ghost">Voir tous les services</a>
-            </div>
-            <div class="ent-guar reveal">
-                <span>Un seul interlocuteur</span>
-                <span>Proposition écrite avant de commencer</span>
-                <span>Vous validez chaque étape</span>
-                <span>Partout en France</span>
-            </div>
-        </div>
-    </section>
-
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
@@ -380,7 +442,7 @@
                     <h4>Contact</h4>
                     <ul>
                         <li><a href="mailto:daelia.partners@gmail.com">daelia.partners@gmail.com</a></li>
-                        <li><a href="contact.html">Parler de mon projet</a></li>
+                        <li><a href="#devis">Parler de mon projet</a></li>
                     </ul>
                 </div>
             </div>

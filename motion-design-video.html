@@ -97,7 +97,7 @@
                 <a href="index.html#faq">Questions</a>
             </nav>
             <div class="ent-actions">
-                <a href="contact.html" class="btn btn-primary">Parler de mon projet</a>
+                <a href="#devis" class="btn btn-primary">Parler de mon projet</a>
             </div>
             <button class="ent-burger" id="entBurger" aria-label="Menu"><span></span><span></span><span></span></button>
         </div>
@@ -115,7 +115,7 @@
                 <a href="index.html#faq">Questions</a>
         </nav>
         <div class="ent-drawer-foot">
-            <a href="contact.html" class="btn btn-primary ent-drawer-partner">Parler de mon projet</a>
+            <a href="#devis" class="btn btn-primary ent-drawer-partner">Parler de mon projet</a>
         </div>
     </div>
     <div class="ent-drawer-backdrop" id="entDrawerBackdrop"></div>
@@ -123,7 +123,7 @@
     <nav class="ent-bottom-nav">
         <a href="index.html" class="ent-bn-item"><span class="ent-bn-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></span><span class="ent-bn-label">Accueil</span></a>
         <a href="index.html#services" class="ent-bn-item"><span class="ent-bn-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></span><span class="ent-bn-label">Services</span></a>
-        <a href="contact.html" class="ent-bn-item"><span class="ent-bn-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></span><span class="ent-bn-label">Contact</span></a>
+        <a href="#devis" class="ent-bn-item"><span class="ent-bn-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></span><span class="ent-bn-label">Contact</span></a>
     </nav>
 
     <section class="ent-hero dn-hero">
@@ -133,7 +133,7 @@
             <h2 class="ent-hero-title">Votre offre expliquée<br><span>en trente secondes.</span></h2>
             <p>On transforme ce que vous vendez en une vidéo animée, claire et rythmée : pour votre site, vos publicités, un salon ou un écran en boutique. Du script au fichier final, on s&#x27;occupe de tout.</p>
             <div class="ent-cta-row">
-                <a href="contact.html" class="btn btn-primary">Parler de mon projet</a>
+                <a href="#devis" class="btn btn-primary">Parler de mon projet</a>
                 <a href="#prestations" class="btn btn-ghost">Voir ce qu'on fait</a>
             </div>
             </div>
@@ -266,7 +266,107 @@
         </div>
     </section>
 
-    <section class="ent-section ent-white">
+    <section class="ent-section ent-white dn-devis" id="devis">
+        <div class="container ent-center" style="max-width: 800px;">
+            <span class="ent-eyebrow reveal">Votre demande</span>
+            <h2 class="reveal">Une idée de vidéo ?</h2>
+            <p class="ent-lead reveal">Dites-nous ce que vous voulez faire comprendre et où la vidéo sera diffusée. On vous propose un format et une durée.</p>
+            <div class="form-card">
+                <form class="dn-form" action="https://webprime.app/webhook/contact/bc024c6a49270fbd5c6410130a36f4a25f54b1d8af00affb5697d01be039f033" method="POST" data-service="Motion design et vidéo" novalidate>
+                    <div class="hp-wrap">
+                        <label for="website">Votre site web :</label>
+                        <input type="text" id="website" name="_honey" autocomplete="off" tabindex="-1">
+                    </div>
+
+                    <div class="form-page active">
+                        <div class="form-group">
+                            <label for="f-nom">Prénom et nom <span class="required">*</span></label>
+                            <input type="text" id="f-nom" name="nom" placeholder="Prénom Nom" autocomplete="name" required>
+                            <div class="error-msg">Veuillez indiquer votre nom</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="f-entreprise">Entreprise</label>
+                            <input type="text" id="f-entreprise" name="entreprise" placeholder="Nom de votre entreprise" autocomplete="organization">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="f-email">E-mail <span class="required">*</span></label>
+                            <input type="email" id="f-email" name="email" placeholder="vous@votre-entreprise.fr" autocomplete="email" required>
+                            <div class="error-msg">Veuillez indiquer un e-mail valide</div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="f-telephone">Téléphone</label>
+                            <input type="tel" id="f-telephone" name="telephone" placeholder="06 00 00 00 00" autocomplete="tel">
+                            <div class="error-msg">Ce numéro ne semble pas valide (ex. : 06 12 34 56 78)</div>
+                        </div>
+
+                        <div class="form-group" data-label="Type de vidéo">
+                            <label for="f-type_video">Type de vidéo</label>
+                            <select id="f-type_video" name="type_video">
+                                <option value="">Choisir…</option>
+                                <option value="Vidéo de présentation">Vidéo de présentation</option>
+                                <option value="Film publicitaire animé">Film publicitaire animé</option>
+                                <option value="Vidéo explicative">Vidéo explicative</option>
+                                <option value="Logo ou habillage animé">Logo ou habillage animé</option>
+                                <option value="Autre">Autre</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group" data-label="Durée envisagée">
+                            <label for="f-duree">Durée envisagée</label>
+                            <select id="f-duree" name="duree">
+                                <option value="">Choisir…</option>
+                                <option value="Moins de 30 secondes">Moins de 30 secondes</option>
+                                <option value="30 secondes à 1 minute">30 secondes à 1 minute</option>
+                                <option value="Plus d&#x27;une minute">Plus d&#x27;une minute</option>
+                                <option value="Je ne sais pas encore">Je ne sais pas encore</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group" data-label="Où sera-t-elle diffusée ?">
+                            <label>Où sera-t-elle diffusée ?</label>
+                            <div class="checkbox-group">
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="diffusion" value="Site internet">
+                                    <span class="custom-check"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+                                    <span class="option-text">Site internet</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="diffusion" value="Réseaux sociaux">
+                                    <span class="custom-check"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+                                    <span class="option-text">Réseaux sociaux</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="diffusion" value="Publicité en ligne">
+                                    <span class="custom-check"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+                                    <span class="option-text">Publicité en ligne</span>
+                                </label>
+                                <label class="checkbox-option">
+                                    <input type="checkbox" name="diffusion" value="Salon ou écran en boutique">
+                                    <span class="custom-check"><svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="3"><path stroke-linecap="round" stroke-linejoin="round" d="M5 13l4 4L19 7"/></svg></span>
+                                    <span class="option-text">Salon ou écran en boutique</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="f-message">Votre message</label>
+                            <textarea id="f-message" name="message" placeholder="Ce que la vidéo doit faire comprendre…"></textarea>
+                            <div class="error-msg">Veuillez écrire quelques mots sur votre projet</div>
+                        </div>
+
+                        <div class="form-buttons">
+                            <button type="submit" class="btn-submit">Demander un devis vidéo</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="ent-section">
         <div class="container ent-center">
             <span class="ent-eyebrow reveal">Voir aussi</span>
             <h2 class="reveal">Les autres <span>services</span></h2>
@@ -329,23 +429,6 @@
         </div>
     </section>
 
-    <section class="ent-cta" id="contact">
-        <div class="container">
-            <h2 class="reveal">Une idée de vidéo ?</h2>
-            <p class="reveal">Dites-nous ce que vous voulez faire comprendre et où la vidéo sera diffusée. On vous propose un format et une durée.</p>
-            <div class="ent-cta-row reveal">
-                <a href="contact.html" class="btn btn-primary">Parler de mon projet</a>
-                <a href="index.html#services" class="btn btn-ghost">Voir tous les services</a>
-            </div>
-            <div class="ent-guar reveal">
-                <span>Un seul interlocuteur</span>
-                <span>Proposition écrite avant de commencer</span>
-                <span>Vous validez chaque étape</span>
-                <span>Partout en France</span>
-            </div>
-        </div>
-    </section>
-
     <footer class="footer">
         <div class="container">
             <div class="footer-grid">
@@ -380,7 +463,7 @@
                     <h4>Contact</h4>
                     <ul>
                         <li><a href="mailto:daelia.partners@gmail.com">daelia.partners@gmail.com</a></li>
-                        <li><a href="contact.html">Parler de mon projet</a></li>
+                        <li><a href="#devis">Parler de mon projet</a></li>
                     </ul>
                 </div>
             </div>

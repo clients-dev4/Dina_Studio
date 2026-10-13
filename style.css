@@ -2758,3 +2758,11 @@ a:focus-visible, button:focus-visible, .btn:focus-visible, input:focus-visible, 
     .dn-service .dn-orbites { transform: scale(.9); }
     .dn-badge { font-size: 13px; padding: 3px 10px; border-width: 2px; }
 }
+
+.dn-devis .form-card { margin-top: 40px; text-align: left; }
+.dn-form .checkbox-group { flex-direction: row; flex-wrap: wrap; gap: 10px 12px; }
+.dn-form .checkbox-option { padding: 10px 14px; }
+.dn-form .checkbox-option .option-text { font-size: 14px; font-weight: 500; color: var(--ink); }
+.dn-form .checkbox-option:has(input:checked) .option-text { color: var(--on-accent); font-weight: 700; }
+.dn-form .checkbox-option .custom-check { color: var(--ink); }
+.dn-form .form-buttons { justify-content: flex-end; }

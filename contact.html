@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact — Dina Studio</title>
-    <meta name="description" content="Décrivez votre projet à Dina Studio : publicité en ligne, contenus pour les réseaux sociaux, automatisation ou agents IA. Réponse par e-mail ou par téléphone.">
+    <meta name="description" content="Décrivez votre projet à Dina Studio : publicité en ligne, contenus, vidéo, sites web, automatisation, agents IA, audit ou formation. Réponse par e-mail ou par téléphone.">
     <link rel="canonical" href="https://dina-studio.fr/contact.html"/>
     <meta name="robots" content="index, follow">
     <meta property="og:title" content="Contact — Dina Studio">
-    <meta property="og:description" content="Décrivez votre projet à Dina Studio : publicité en ligne, contenus pour les réseaux sociaux, automatisation ou agents IA. Réponse par e-mail ou par téléphone.">
+    <meta property="og:description" content="Décrivez votre projet à Dina Studio : publicité en ligne, contenus, vidéo, sites web, automatisation, agents IA, audit ou formation. Réponse par e-mail ou par téléphone.">
     <meta property="og:url" content="https://dina-studio.fr/contact.html">
     <meta property="og:type" content="website">
     <meta name="twitter:card" content="summary">
@@ -67,7 +67,7 @@
             </div>
 
             <div class="form-card">
-                <form id="contactForm" action="https://webprime.app/webhook/contact/bc024c6a49270fbd5c6410130a36f4a25f54b1d8af00affb5697d01be039f033" method="POST" novalidate>
+                <form class="dn-form" action="https://webprime.app/webhook/contact/bc024c6a49270fbd5c6410130a36f4a25f54b1d8af00affb5697d01be039f033" method="POST" data-service="" novalidate>
                     <div class="hp-wrap">
                         <label for="website">Votre site web :</label>
                         <input type="text" id="website" name="_honey" autocomplete="off" tabindex="-1">
@@ -75,30 +75,31 @@
 
                     <div class="form-page active">
                         <div class="form-group">
-                            <label for="nom">Prénom et nom <span class="required">*</span></label>
-                            <input type="text" id="nom" name="nom" placeholder="Prénom Nom" autocomplete="name" required>
+                            <label for="f-nom">Prénom et nom <span class="required">*</span></label>
+                            <input type="text" id="f-nom" name="nom" placeholder="Prénom Nom" autocomplete="name" required>
                             <div class="error-msg">Veuillez indiquer votre nom</div>
                         </div>
 
                         <div class="form-group">
-                            <label for="entreprise">Entreprise</label>
-                            <input type="text" id="entreprise" name="entreprise" placeholder="Nom de votre entreprise" autocomplete="organization">
+                            <label for="f-entreprise">Entreprise</label>
+                            <input type="text" id="f-entreprise" name="entreprise" placeholder="Nom de votre entreprise" autocomplete="organization">
                         </div>
 
                         <div class="form-group">
-                            <label for="email">E-mail <span class="required">*</span></label>
-                            <input type="email" id="email" name="email" placeholder="vous@votre-entreprise.fr" autocomplete="email" required>
+                            <label for="f-email">E-mail <span class="required">*</span></label>
+                            <input type="email" id="f-email" name="email" placeholder="vous@votre-entreprise.fr" autocomplete="email" required>
                             <div class="error-msg">Veuillez indiquer un e-mail valide</div>
                         </div>
 
                         <div class="form-group">
-                            <label for="telephone">Téléphone</label>
-                            <input type="tel" id="telephone" name="telephone" placeholder="06 00 00 00 00" autocomplete="tel">
+                            <label for="f-telephone">Téléphone</label>
+                            <input type="tel" id="f-telephone" name="telephone" placeholder="06 00 00 00 00" autocomplete="tel">
+                            <div class="error-msg">Ce numéro ne semble pas valide (ex. : 06 12 34 56 78)</div>
                         </div>
 
                         <div class="form-group">
-                            <label for="service">Service qui vous intéresse</label>
-                            <select id="service" name="service">
+                            <label for="f-service">Service qui vous intéresse</label>
+                            <select id="f-service" name="service">
                                 <option value="Contenus réseaux sociaux">Contenus réseaux sociaux</option>
                                 <option value="Motion design et vidéo">Motion design et vidéo</option>
                                 <option value="Photo et audio">Photo et audio</option>
@@ -113,9 +114,11 @@
                             </select>
                         </div>
 
+
+
                         <div class="form-group">
-                            <label for="message">Votre message <span class="required">*</span></label>
-                            <textarea id="message" name="message" placeholder="Votre métier, ce que vous voulez améliorer, vos délais…" required></textarea>
+                            <label for="f-message">Votre message <span class="required">*</span></label>
+                            <textarea id="f-message" name="message" placeholder="Votre métier, ce que vous voulez améliorer, vos délais…" required></textarea>
                             <div class="error-msg">Veuillez écrire quelques mots sur votre projet</div>
                         </div>
 
@@ -191,66 +194,6 @@
             });
         }, { threshold: 0.12 });
         document.querySelectorAll('.reveal').forEach(function (el) { obs.observe(el); });
-    </script>
-    <script>
-        (function () {
-            var form = document.getElementById('contactForm');
-            function valide() {
-                var ok = true;
-                form.querySelectorAll('[required]').forEach(function (el) {
-                    var bon = el.value.trim() !== '';
-                    if (bon && el.type === 'email') bon = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(el.value.trim());
-                    el.closest('.form-group').classList.toggle('error', !bon);
-                    if (!bon) ok = false;
-                });
-                return ok;
-            }
-            form.querySelectorAll('input, textarea').forEach(function (el) {
-                el.addEventListener('input', function () { this.closest('.form-group') && this.closest('.form-group').classList.remove('error'); });
-            });
-            form.addEventListener('submit', function (e) {
-                e.preventDefault();
-                var honeyField = form.querySelector('[name="_honey"]');
-                if (honeyField && honeyField.value) return false;
-                if (!valide()) {
-                    var premier = form.querySelector('.form-group.error');
-                    if (premier) premier.scrollIntoView({ behavior: 'smooth', block: 'center' });
-                    return false;
-                }
-                var btn = form.querySelector('.btn-submit');
-                btn.textContent = 'Envoi en cours...';
-                btn.disabled = true;
-                var nom = (form.querySelector('[name="nom"]') || {}).value || '';
-                var entreprise = (form.querySelector('[name="entreprise"]') || {}).value || '';
-                var email = (form.querySelector('[name="email"]') || {}).value || '';
-                var tel = (form.querySelector('[name="telephone"]') || {}).value || '';
-                var service = (form.querySelector('[name="service"]') || {}).value || '';
-                var message = (form.querySelector('[name="message"]') || {}).value || '';
-                var webhookData = new FormData();
-                webhookData.append('name', nom);
-                webhookData.append('email', email);
-                webhookData.append('tel', tel);
-                webhookData.append('service', service);
-                webhookData.append('message', 'Entreprise : ' + (entreprise || 'non renseignee')
-                    + '\nTelephone : ' + (tel || 'non renseigne')
-                    + '\nService demande : ' + service
-                    + '\n\n' + message);
-                var p1 = fetch('https://webprime.app/webhook/contact/bc024c6a49270fbd5c6410130a36f4a25f54b1d8af00affb5697d01be039f033', {
-                    method: 'POST',
-                    body: webhookData,
-                    keepalive: true
-                }).catch(function () {});
-                var shown = false;
-                var showThanks = function () {
-                    if (shown) return;
-                    shown = true;
-                    window.location.href = 'merci.html';
-                };
-                Promise.allSettled([p1]).then(showThanks);
-                setTimeout(showThanks, 3000);
-                return false;
-            });
-        })();
     </script>
     <script src="ui.js"></script>
 </body>
