@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agents IA pour entreprise : tri des demandes, lecture de documents — Dina Studio</title>
+    <meta name="description" content="Dina Studio crée des agents IA pour les TPE et PME : tri des demandes, lecture de CV, devis et factures, préparation de dossiers. Reliés à vos outils, avec validation humaine.">
+    <link rel="canonical" href="https://dina-studio.fr/agents-ia-entreprise.html"/>
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Agents IA pour entreprise : tri des demandes, lecture de documents — Dina Studio">
+    <meta property="og:description" content="Dina Studio crée des agents IA pour les TPE et PME : tri des demandes, lecture de CV, devis et factures, préparation de dossiers. Reliés à vos outils, avec validation humaine.">
+    <meta property="og:url" content="https://dina-studio.fr/agents-ia-entreprise.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" type="image/png" sizes="192x192" href="./logo/icon-192x192.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Agents IA pour entreprise",
+    "serviceType": "Agents IA pour entreprise",
+    "provider": {
+        "@type": "ProfessionalService",
+        "name": "Dina Studio",
+        "url": "https://dina-studio.fr"
+    },
+    "areaServed": {
+        "@type": "Country",
+        "name": "France"
+    },
+    "description": "Dina Studio crée des agents IA pour les TPE et PME : tri des demandes, lecture de CV, devis et factures, préparation de dossiers. Reliés à vos outils, avec validation humaine.",
+    "url": "https://dina-studio.fr/agents-ia-entreprise.html"
+}
+    </script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "À quoi un agent IA peut-il me servir concrètement ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Celui qui traite une tâche fréquente et bien définie : trier les e-mails, lire des CV, préparer des réponses aux demandes de devis. On le choisit après avoir regardé votre quotidien."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Que se passe-t-il quand l'agent fait une erreur ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oui. C'est pourquoi l'agent prépare le travail et qu'une personne valide les décisions importantes. On teste aussi sur vos cas réels avant la mise en service."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "L'agent a-t-il accès à tous nos fichiers ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oui, avec ceux que vous autorisez. On définit précisément les dossiers et les outils auxquels il a accès."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Quelle différence avec une simple automatisation ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oui. Une automatisation suit des règles fixes. Un agent IA comprend un texte ou un document et s'adapte à son contenu. Les deux se combinent souvent."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Mon équipe saura-t-elle s'en servir ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "On montre l'outil à chaque utilisateur, on fournit un mode d'emploi simple et on ajuste l'agent pendant les premières semaines."
+            }
+        }
+    ]
+}
+    </script>
+</head>
+<body>
+    <header class="ent-header">
+        <div class="container">
+            <a href="index.html" class="ent-logo" aria-label="Dina Studio"><span class="ent-logo-text">Dina<span>Studio</span></span></a>
+            <nav class="ent-nav">
+                <a href="index.html">Accueil</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#methode">Méthode</a>
+                <a href="index.html#faq">Questions</a>
+            </nav>
+            <div class="ent-actions">
+                <a href="#contact" class="btn btn-primary">Parler de mon projet</a>
+            </div>
+            <button class="ent-burger" id="entBurger" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <div class="ent-drawer" id="entDrawer">
+        <div class="ent-drawer-head">
+            <span class="ent-logo-text">Dina<span>Studio</span></span>
+            <button class="ent-drawer-close" id="entDrawerClose" aria-label="Fermer">&times;</button>
+        </div>
+        <nav class="ent-drawer-nav">
+            <a href="index.html">Accueil</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#methode">Méthode</a>
+                <a href="index.html#faq">Questions</a>
+        </nav>
+        <div class="ent-drawer-foot">
+            <a href="#contact" class="btn btn-primary ent-drawer-partner">Parler de mon projet</a>
+        </div>
+    </div>
+    <div class="ent-drawer-backdrop" id="entDrawerBackdrop"></div>
+
+    <nav class="ent-bottom-nav">
+        <a href="index.html" class="ent-bn-item"><span class="ent-bn-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></span><span class="ent-bn-label">Accueil</span></a>
+        <a href="index.html#services" class="ent-bn-item"><span class="ent-bn-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></span><span class="ent-bn-label">Services</span></a>
+        <a href="#contact" class="ent-bn-item"><span class="ent-bn-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></span><span class="ent-bn-label">Contact</span></a>
+    </nav>
+
+    <section class="ent-hero">
+        <div class="container">
+            <h1 class="ent-eyebrow">Agents IA · Assistants pour votre équipe</h1>
+            <h2 class="ent-hero-title">Un assistant qui prépare<br><span>le travail de votre équipe.</span></h2>
+            <p>On crée des agents IA pour des tâches précises : trier les demandes, lire des documents, préparer une réponse ou un dossier. Ils travaillent avec vos outils, et la décision reste humaine.</p>
+            <div class="ent-cta-row">
+                <a href="#contact" class="btn btn-primary">Parler de mon projet</a>
+                <a href="#prestations" class="btn btn-ghost">Voir ce qu'on fait</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="ent-section">
+        <div class="container ent-center">
+            <span class="ent-eyebrow reveal">C'est quoi ?</span>
+            <h2 class="reveal">Un agent <span>IA</span></h2>
+            <p class="ent-lead reveal">Un agent IA est un assistant numérique à qui l&#x27;on confie une mission claire : lire, trier, résumer, préparer. Il ne remplace pas votre équipe, il lui évite le travail de préparation. On définit avec vous ce qu&#x27;il a le droit de faire, les documents auxquels il accède et les actions qui demandent votre accord.</p>
+        </div>
+    </section>
+
+    <section class="ent-section ent-white" id="prestations">
+        <div class="container ent-center">
+            <span class="ent-eyebrow reveal">Ce qu&#x27;on fait</span>
+            <h2 class="reveal">Des agents pour <span>des tâches précises</span></h2>
+            <div class="ent-grid cols-3">
+                <div class="ent-card reveal">
+                    <div class="ico">📥</div>
+                    <h3>Classement du courrier entrant</h3>
+                    <p>Les demandes entrantes sont classées et une réponse adaptée est préparée pour relecture.</p>
+                </div>
+                <div class="ent-card reveal">
+                    <div class="ico">📄</div>
+                    <h3>Extraction d&#x27;informations</h3>
+                    <p>CV, devis ou factures : l&#x27;agent lit et extrait les informations utiles.</p>
+                </div>
+                <div class="ent-card reveal">
+                    <div class="ico">🗒️</div>
+                    <h3>Notes de synthèse</h3>
+                    <p>Un résumé ou un dossier prêt à lire, pour aider la personne qui décide.</p>
+                </div>
+                <div class="ent-card reveal">
+                    <div class="ico">💬</div>
+                    <h3>Assistant interne</h3>
+                    <p>Un assistant relié à vos documents et à vos outils autorisés, qui répond aux questions de l&#x27;équipe.</p>
+                </div>
+                <div class="ent-card reveal">
+                    <div class="ico">🛡️</div>
+                    <h3>Garde-fous</h3>
+                    <p>On définit ses accès, ses limites et les actions soumises à validation humaine.</p>
+                </div>
+                <div class="ent-card reveal">
+                    <div class="ico">🧑‍🏫</div>
+                    <h3>Prise en main</h3>
+                    <p>On forme les utilisateurs et on ajuste l&#x27;agent à partir de cas réels.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ent-section">
+        <div class="container ent-center">
+            <span class="ent-eyebrow reveal">Dans votre métier</span>
+            <h2 class="reveal">Trois exemples <span>concrets</span></h2>
+            <div class="ent-grid cols-3">
+                <div class="ent-card reveal">
+                    <div class="ico">🧑‍💼</div>
+                    <h3>Intérim et recrutement</h3>
+                    <p>Les CV sont lus et résumés, avec les points à vérifier avant l&#x27;entretien.</p>
+                </div>
+                <div class="ent-card reveal">
+                    <div class="ico">⚖️</div>
+                    <h3>Avocats et experts-comptables</h3>
+                    <p>Les pièces reçues sont classées et les informations clés sont extraites.</p>
+                </div>
+                <div class="ent-card reveal">
+                    <div class="ico">🧹</div>
+                    <h3>Sociétés de nettoyage</h3>
+                    <p>Les demandes de devis sont triées par type de prestation, avec une première réponse préparée.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ent-section ent-white">
+        <div class="container ent-center">
+            <span class="ent-eyebrow reveal">La méthode</span>
+            <h2 class="reveal">Comment <span>on procède</span></h2>
+            <div class="ent-grid cols-4 ent-steps">
+                <div class="ent-card ent-step reveal" data-num="01">
+                    <div class="num">01</div>
+                    <h3>Repérer la bonne tâche</h3>
+                    <p>On repère la tâche où un agent ferait gagner le plus de temps.</p>
+                </div>
+                <div class="ent-card ent-step reveal" data-num="02">
+                    <div class="num">02</div>
+                    <h3>Fixer son périmètre</h3>
+                    <p>Ce que l&#x27;agent fait, ce qu&#x27;il ne fait pas, et ce que vous validez vous-même.</p>
+                </div>
+                <div class="ent-card ent-step reveal" data-num="03">
+                    <div class="num">03</div>
+                    <h3>Tester sur vos documents</h3>
+                    <p>Connexion à vos outils, tests sur vos vrais documents, corrections.</p>
+                </div>
+                <div class="ent-card ent-step reveal" data-num="04">
+                    <div class="num">04</div>
+                    <h3>Former et régler</h3>
+                    <p>Formation de l&#x27;équipe et réglages à partir de l&#x27;usage quotidien.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ent-section" id="faq">
+        <div class="container ent-center">
+            <span class="ent-eyebrow reveal">Questions fréquentes</span>
+            <h2 class="reveal">Ce qu'on <span>nous demande</span></h2>
+            <div class="ent-faq">
+                <details class="reveal"><summary>À quoi un agent IA peut-il me servir concrètement ?</summary><p>Celui qui traite une tâche fréquente et bien définie : trier les e-mails, lire des CV, préparer des réponses aux demandes de devis. On le choisit après avoir regardé votre quotidien.</p></details>
+                <details class="reveal"><summary>Que se passe-t-il quand l&#x27;agent fait une erreur ?</summary><p>Oui. C&#x27;est pourquoi l&#x27;agent prépare le travail et qu&#x27;une personne valide les décisions importantes. On teste aussi sur vos cas réels avant la mise en service.</p></details>
+                <details class="reveal"><summary>L&#x27;agent a-t-il accès à tous nos fichiers ?</summary><p>Oui, avec ceux que vous autorisez. On définit précisément les dossiers et les outils auxquels il a accès.</p></details>
+                <details class="reveal"><summary>Quelle différence avec une simple automatisation ?</summary><p>Oui. Une automatisation suit des règles fixes. Un agent IA comprend un texte ou un document et s&#x27;adapte à son contenu. Les deux se combinent souvent.</p></details>
+                <details class="reveal"><summary>Mon équipe saura-t-elle s&#x27;en servir ?</summary><p>On montre l&#x27;outil à chaque utilisateur, on fournit un mode d&#x27;emploi simple et on ajuste l&#x27;agent pendant les premières semaines.</p></details>
+            </div>
+        </div>
+    </section>
+
+    <section class="ent-section ent-white">
+        <div class="container ent-center">
+            <span class="ent-eyebrow reveal">Voir aussi</span>
+            <h2 class="reveal">Les autres <span>services</span></h2>
+            <div class="ent-grid cols-4">
+                <div class="ent-card ent-levier reveal">
+                    <div class="ico">🎯</div>
+                    <h3>Publicité en ligne</h3>
+                    <p>Campagnes Google Ads, Meta Ads et TikTok Ads : on crée les annonces, on règle le ciblage et on suit ce que chaque euro rapporte.</p>
+                    <a href="publicite-en-ligne.html" class="btn btn-ghost">En savoir plus →</a>
+                </div>
+                <div class="ent-card ent-levier reveal">
+                    <div class="ico">🎬</div>
+                    <h3>Contenus réseaux sociaux</h3>
+                    <p>Reels animés, carrousels, posts et visuels à vos couleurs, sans tournage. Vous validez, vous publiez.</p>
+                    <a href="contenus-reseaux-sociaux.html" class="btn btn-ghost">En savoir plus →</a>
+                </div>
+                <div class="ent-card ent-levier reveal">
+                    <div class="ico">⚙️</div>
+                    <h3>Automatisation des processus</h3>
+                    <p>Devis, relances, rendez-vous, rappels : on relie vos outils pour que les tâches répétitives se fassent toutes seules.</p>
+                    <a href="automatisation-processus.html" class="btn btn-ghost">En savoir plus →</a>
+                </div>
+                <div class="ent-card ent-levier reveal">
+                    <div class="ico">✨</div>
+                    <h3>Visibilité dans les IA (GEO)</h3>
+                    <p>Faire en sorte que ChatGPT, Gemini et Perplexity comprennent votre entreprise et puissent la citer.</p>
+                    <a href="visibilite-ia-geo.html" class="btn btn-ghost">En savoir plus →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ent-cta" id="contact">
+        <div class="container">
+            <h2 class="reveal">Quelle tâche confier à un agent ?</h2>
+            <p class="reveal">Décrivez-nous une tâche qui revient souvent dans votre entreprise. On vous dit ce qu&#x27;un agent peut en faire.</p>
+            <div class="ent-cta-row reveal">
+                <a href="mailto:contact@dina-studio.fr" class="btn btn-primary">contact@dina-studio.fr</a>
+                <a href="index.html#services" class="btn btn-ghost">Voir tous les services</a>
+            </div>
+            <div class="ent-guar reveal">
+                <span>Un seul interlocuteur</span>
+                <span>Proposition écrite avant de commencer</span>
+                <span>Vous validez chaque étape</span>
+                <span>Partout en France</span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <span class="ent-logo-text">Dina<span>Studio</span></span>
+                    <p>Publicité en ligne, contenus pour les réseaux sociaux, automatisation et agents IA pour les TPE et PME, partout en France.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="publicite-en-ligne.html">Publicité en ligne</a></li>
+                        <li><a href="contenus-reseaux-sociaux.html">Contenus réseaux sociaux</a></li>
+                        <li><a href="automatisation-processus.html">Automatisation des processus</a></li>
+                        <li><a href="agents-ia-entreprise.html">Agents IA pour entreprise</a></li>
+                        <li><a href="visibilite-ia-geo.html">Visibilité dans les IA (GEO)</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>L'agence</h4>
+                    <ul>
+                        <li><a href="index.html#methode">Notre méthode</a></li>
+                        <li><a href="index.html#pour-qui">Pour qui</a></li>
+                        <li><a href="index.html#faq">Questions fréquentes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:contact@dina-studio.fr">contact@dina-studio.fr</a></li>
+                        <li><a href="#contact">Parler de mon projet</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Dina Studio 2026 - Tous droits réservés · <a href="mentions-legales.html" style="color:inherit;">Mentions légales</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var entDrawer = document.getElementById('entDrawer');
+        var entBackdrop = document.getElementById('entDrawerBackdrop');
+        function openDrawer() { entDrawer.classList.add('open'); entBackdrop.classList.add('open'); }
+        function closeDrawer() { entDrawer.classList.remove('open'); entBackdrop.classList.remove('open'); }
+        document.getElementById('entBurger').addEventListener('click', openDrawer);
+        document.getElementById('entDrawerClose').addEventListener('click', closeDrawer);
+        entBackdrop.addEventListener('click', closeDrawer);
+        entDrawer.querySelectorAll('a').forEach(function (a) {
+            a.addEventListener('click', closeDrawer);
+        });
+        var obs = new IntersectionObserver(function (entries) {
+            entries.forEach(function (e) {
+                if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); }
+            });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.reveal').forEach(function (el) { obs.observe(el); });
+    </script>
+    <script src="ui.js"></script>
+</body>
+</html>
