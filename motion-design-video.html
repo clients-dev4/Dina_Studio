@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Motion design et vidéo d&#x27;entreprise : films animés, publicités, logos animés — Dina Studio</title>
+    <meta name="description" content="Dina Studio réalise vos vidéos en motion design : vidéo de présentation, film publicitaire animé, tutoriel, logo animé. Script, voix off, animation et formats pour chaque écran.">
+    <link rel="canonical" href="https://dina-studio.fr/motion-design-video.html"/>
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Motion design et vidéo d&#x27;entreprise : films animés, publicités, logos animés — Dina Studio">
+    <meta property="og:description" content="Dina Studio réalise vos vidéos en motion design : vidéo de présentation, film publicitaire animé, tutoriel, logo animé. Script, voix off, animation et formats pour chaque écran.">
+    <meta property="og:url" content="https://dina-studio.fr/motion-design-video.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" type="image/png" sizes="192x192" href="./logo/icon-192x192.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Motion design et vidéo",
+    "serviceType": "Motion design et vidéo",
+    "provider": {
+        "@type": "ProfessionalService",
+        "name": "Dina Studio",
+        "url": "https://dina-studio.fr"
+    },
+    "areaServed": {
+        "@type": "Country",
+        "name": "France"
+    },
+    "description": "Dina Studio réalise vos vidéos en motion design : vidéo de présentation, film publicitaire animé, tutoriel, logo animé. Script, voix off, animation et formats pour chaque écran.",
+    "url": "https://dina-studio.fr/motion-design-video.html"
+}
+    </script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Combien de temps dure une vidéo ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Entre quinze secondes pour une publicité et une minute trente pour une présentation complète. Plus c'est court, plus c'est regardé jusqu'au bout."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Quel est le délai de réalisation ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Il dépend de la durée et du niveau d'animation. On vous donne une date de livraison dans la proposition, avant de commencer."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Dois-je fournir des images ou des vidéos ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Non. Votre logo et vos couleurs suffisent. Si vous avez des photos de vos réalisations, on peut les intégrer."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Puis-je demander des modifications ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oui. Vous validez d'abord le script, puis une première version animée. Les corrections sont prévues à ces deux étapes."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "La vidéo m'appartient-elle ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oui. Une fois la prestation réglée, vous l'utilisez où vous voulez : site, réseaux sociaux, publicités, salons, écrans."
+            }
+        }
+    ]
+}
+    </script>
+</head>
+<body>
+    <header class="ent-header">
+        <div class="container">
+            <a href="index.html" class="ent-logo" aria-label="Dina Studio"><span class="ent-logo-text">Dina<span>Studio</span></span></a>
+            <nav class="ent-nav">
+                <a href="index.html">Accueil</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#methode">Méthode</a>
+                <a href="index.html#faq">Questions</a>
+            </nav>
+            <div class="ent-actions">
+                <a href="contact.html" class="btn btn-primary">Parler de mon projet</a>
+            </div>
+            <button class="ent-burger" id="entBurger" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <div class="ent-drawer" id="entDrawer">
+        <div class="ent-drawer-head">
+            <span class="ent-logo-text">Dina<span>Studio</span></span>
+            <button class="ent-drawer-close" id="entDrawerClose" aria-label="Fermer">&times;</button>
+        </div>
+        <nav class="ent-drawer-nav">
+            <a href="index.html">Accueil</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#methode">Méthode</a>
+                <a href="index.html#faq">Questions</a>
+        </nav>
+        <div class="ent-drawer-foot">
+            <a href="contact.html" class="btn btn-primary ent-drawer-partner">Parler de mon projet</a>
+        </div>
+    </div>
+    <div class="ent-drawer-backdrop" id="entDrawerBackdrop"></div>
+
+    <nav class="ent-bottom-nav">
+        <a href="index.html" class="ent-bn-item"><span class="ent-bn-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></span><span class="ent-bn-label">Accueil</span></a>
+        <a href="index.html#services" class="ent-bn-item"><span class="ent-bn-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></span><span class="ent-bn-label">Services</span></a>
+        <a href="contact.html" class="ent-bn-item"><span class="ent-bn-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></span><span class="ent-bn-label">Contact</span></a>
+    </nav>
+
+    <section class="ent-hero dn-hero">
+        <div class="container">
+            <div class="dn-texte">
+            <h1 class="ent-eyebrow">Motion design · Vidéo d&#x27;entreprise</h1>
+            <h2 class="ent-hero-title">Votre offre expliquée<br><span>en trente secondes.</span></h2>
+            <p>On transforme ce que vous vendez en une vidéo animée, claire et rythmée : pour votre site, vos publicités, un salon ou un écran en boutique. Du script au fichier final, on s&#x27;occupe de tout.</p>
+            <div class="ent-cta-row">
+                <a href="contact.html" class="btn btn-primary">Parler de mon projet</a>
+                <a href="#prestations" class="btn btn-ghost">Voir ce qu'on fait</a>
+            </div>
+            </div>
+            <div class="dn-visuel" aria-hidden="true">
+                <div class="dn-orbites"><span></span><span></span><span></span><i></i><i></i><i></i></div>
+                <div class="dn-robot">
+                    <img src="robot/robot-video.webp" alt="" width="600" height="900" class="dn-robot-img actif">
+                </div>
+                <div class="dn-notice dn-n1"><span class="dn-pastille"></span><span class="dn-notice-texte"><strong>Script validé</strong><small>Trente secondes · une seule idée</small></span></div>
+                <div class="dn-notice dn-n2"><span class="dn-pastille"></span><span class="dn-notice-texte"><strong>Première version animée</strong><small>Prête à regarder</small></span></div>
+                <div class="dn-notice dn-n3"><span class="dn-pastille"></span><span class="dn-notice-texte"><strong>Fichiers livrés</strong><small>Horizontal, vertical et carré</small></span></div>
+                <div class="dn-mode">
+                    <div class="dn-mode-pilule"><span class="dn-pastille-ronde"></span>Mode : <b>Motion design</b></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ent-section">
+        <div class="container ent-center">
+            <span class="ent-eyebrow reveal">C'est quoi ?</span>
+            <h2 class="reveal">Le motion <span>design</span></h2>
+            <p class="ent-lead reveal">Le motion design, c&#x27;est de l&#x27;image animée : des textes, des formes, des illustrations et des pictogrammes qui bougent pour raconter une idée. Pas d&#x27;acteurs ni de décor à louer, donc pas de journée de tournage. C&#x27;est le format le plus direct pour faire comprendre un service, un produit ou un chiffre à quelqu&#x27;un qui n&#x27;a que quelques secondes.</p>
+        </div>
+    </section>
+
+    <section class="ent-section ent-white" id="prestations">
+        <div class="container ent-center">
+            <span class="ent-eyebrow reveal">Ce qu&#x27;on réalise</span>
+            <h2 class="reveal">Des vidéos pour <span>chaque usage</span></h2>
+            <div class="ent-grid cols-3">
+                <div class="ent-card reveal">
+                    <div class="ico">🏢</div>
+                    <h3>Vidéo de présentation</h3>
+                    <p>Qui vous êtes, ce que vous faites et pourquoi vous choisir, en moins d&#x27;une minute, pour la page d&#x27;accueil de votre site.</p>
+                </div>
+                <div class="ent-card reveal">
+                    <div class="ico">📣</div>
+                    <h3>Film publicitaire animé</h3>
+                    <p>Un spot court conçu pour la publicité en ligne, avec une accroche dès la première seconde.</p>
+                </div>
+                <div class="ent-card reveal">
+                    <div class="ico">🧑‍🏫</div>
+                    <h3>Vidéo explicative</h3>
+                    <p>Un mode d&#x27;emploi, une démarche ou un tarif compliqué, rendus simples par l&#x27;animation.</p>
+                </div>
+                <div class="ent-card reveal">
+                    <div class="ico">✨</div>
+                    <h3>Logo et habillage animés</h3>
+                    <p>Votre logo qui s&#x27;anime, des titres, des transitions et des bandeaux pour toutes vos vidéos.</p>
+                </div>
+                <div class="ent-card reveal">
+                    <div class="ico">🎙️</div>
+                    <h3>Script et voix off</h3>
+                    <p>On écrit le texte, on choisit la voix et la musique, et on ajoute les sous-titres.</p>
+                </div>
+                <div class="ent-card reveal">
+                    <div class="ico">📐</div>
+                    <h3>Tous les formats</h3>
+                    <p>Horizontal pour le site, vertical pour le téléphone, carré pour les fils d&#x27;actualité, et une version sans son.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ent-section">
+        <div class="container ent-center">
+            <span class="ent-eyebrow reveal">Dans votre métier</span>
+            <h2 class="reveal">Trois exemples <span>concrets</span></h2>
+            <div class="ent-grid cols-3">
+                <div class="ent-card reveal">
+                    <div class="ico">🔧</div>
+                    <h3>Artisans du bâtiment</h3>
+                    <p>Les étapes d&#x27;un chantier expliquées en animation, pour rassurer avant de signer le devis.</p>
+                </div>
+                <div class="ent-card reveal">
+                    <div class="ico">⚖️</div>
+                    <h3>Avocats et experts-comptables</h3>
+                    <p>Une démarche juridique ou fiscale résumée en une minute, à envoyer à vos clients.</p>
+                </div>
+                <div class="ent-card reveal">
+                    <div class="ico">💇</div>
+                    <h3>Instituts de beauté et bien-être</h3>
+                    <p>Un soin ou une nouveauté mis en scène pour l&#x27;écran de l&#x27;accueil et vos publicités.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ent-section ent-white">
+        <div class="container ent-center">
+            <span class="ent-eyebrow reveal">La méthode</span>
+            <h2 class="reveal">Comment <span>on procède</span></h2>
+            <div class="ent-grid cols-4 ent-steps">
+                <div class="ent-card ent-step reveal" data-num="01">
+                    <div class="num">01</div>
+                    <h3>On cadre le message</h3>
+                    <p>Une seule idée par vidéo : on choisit avec vous ce qu&#x27;elle doit faire comprendre.</p>
+                </div>
+                <div class="ent-card ent-step reveal" data-num="02">
+                    <div class="num">02</div>
+                    <h3>On écrit le script</h3>
+                    <p>Le texte de la voix off et le déroulé image par image, que vous validez avant toute animation.</p>
+                </div>
+                <div class="ent-card ent-step reveal" data-num="03">
+                    <div class="num">03</div>
+                    <h3>On anime</h3>
+                    <p>Illustrations, mouvements, voix, musique et sous-titres, à vos couleurs.</p>
+                </div>
+                <div class="ent-card ent-step reveal" data-num="04">
+                    <div class="num">04</div>
+                    <h3>On livre les fichiers</h3>
+                    <p>Vos remarques sont intégrées, puis vous recevez chaque format prêt à diffuser.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ent-section" id="faq">
+        <div class="container ent-center">
+            <span class="ent-eyebrow reveal">Questions fréquentes</span>
+            <h2 class="reveal">Ce qu'on <span>nous demande</span></h2>
+            <div class="ent-faq">
+                <details class="reveal"><summary>Combien de temps dure une vidéo ?</summary><p>Entre quinze secondes pour une publicité et une minute trente pour une présentation complète. Plus c&#x27;est court, plus c&#x27;est regardé jusqu&#x27;au bout.</p></details>
+                <details class="reveal"><summary>Quel est le délai de réalisation ?</summary><p>Il dépend de la durée et du niveau d&#x27;animation. On vous donne une date de livraison dans la proposition, avant de commencer.</p></details>
+                <details class="reveal"><summary>Dois-je fournir des images ou des vidéos ?</summary><p>Non. Votre logo et vos couleurs suffisent. Si vous avez des photos de vos réalisations, on peut les intégrer.</p></details>
+                <details class="reveal"><summary>Puis-je demander des modifications ?</summary><p>Oui. Vous validez d&#x27;abord le script, puis une première version animée. Les corrections sont prévues à ces deux étapes.</p></details>
+                <details class="reveal"><summary>La vidéo m&#x27;appartient-elle ?</summary><p>Oui. Une fois la prestation réglée, vous l&#x27;utilisez où vous voulez : site, réseaux sociaux, publicités, salons, écrans.</p></details>
+            </div>
+        </div>
+    </section>
+
+    <section class="ent-section ent-white">
+        <div class="container ent-center">
+            <span class="ent-eyebrow reveal">Voir aussi</span>
+            <h2 class="reveal">Les autres <span>services</span></h2>
+            <div class="ent-grid cols-4">
+                <div class="ent-card ent-levier reveal">
+                    <div class="ico">🎯</div>
+                    <h3>Publicité en ligne</h3>
+                    <p>Campagnes Google Ads, Meta Ads et TikTok Ads : on crée les annonces, on règle le ciblage et on suit ce que chaque euro rapporte.</p>
+                    <a href="publicite-en-ligne.html" class="btn btn-ghost">En savoir plus →</a>
+                </div>
+                <div class="ent-card ent-levier reveal">
+                    <div class="ico">🎬</div>
+                    <h3>Contenus réseaux sociaux</h3>
+                    <p>Des vidéos courtes animées, des carrousels et des images à vos couleurs, créés sans caméra. Il ne vous reste qu&#x27;à publier.</p>
+                    <a href="contenus-reseaux-sociaux.html" class="btn btn-ghost">En savoir plus →</a>
+                </div>
+                <div class="ent-card ent-levier reveal">
+                    <div class="ico">⚙️</div>
+                    <h3>Automatisation des processus</h3>
+                    <p>Devis, relances, rendez-vous, rappels : on relie vos outils pour que les tâches répétitives se fassent toutes seules.</p>
+                    <a href="automatisation-processus.html" class="btn btn-ghost">En savoir plus →</a>
+                </div>
+                <div class="ent-card ent-levier reveal">
+                    <div class="ico">🤖</div>
+                    <h3>Agents IA pour entreprise</h3>
+                    <p>Des assistants qui trient les demandes, lisent vos documents et avancent le travail de vos salariés, sous votre contrôle.</p>
+                    <a href="agents-ia-entreprise.html" class="btn btn-ghost">En savoir plus →</a>
+                </div>
+                <div class="ent-card ent-levier reveal">
+                    <div class="ico">✨</div>
+                    <h3>Visibilité dans les IA (GEO)</h3>
+                    <p>Faire en sorte que ChatGPT, Gemini et Perplexity comprennent votre entreprise et puissent la citer.</p>
+                    <a href="visibilite-ia-geo.html" class="btn btn-ghost">En savoir plus →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ent-cta" id="contact">
+        <div class="container">
+            <h2 class="reveal">Une idée de vidéo ?</h2>
+            <p class="reveal">Dites-nous ce que vous voulez faire comprendre et où la vidéo sera diffusée. On vous propose un format et une durée.</p>
+            <div class="ent-cta-row reveal">
+                <a href="contact.html" class="btn btn-primary">Parler de mon projet</a>
+                <a href="index.html#services" class="btn btn-ghost">Voir tous les services</a>
+            </div>
+            <div class="ent-guar reveal">
+                <span>Un seul interlocuteur</span>
+                <span>Proposition écrite avant de commencer</span>
+                <span>Vous validez chaque étape</span>
+                <span>Partout en France</span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <span class="ent-logo-text">Dina<span>Studio</span></span>
+                    <p>L'agence qui s'occupe de vos publicités, de vos publications et de vos tâches répétitives. Pour les petites et moyennes entreprises, partout en France.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="publicite-en-ligne.html">Publicité en ligne</a></li>
+                        <li><a href="contenus-reseaux-sociaux.html">Contenus réseaux sociaux</a></li>
+                        <li><a href="motion-design-video.html">Motion design et vidéo</a></li>
+                        <li><a href="automatisation-processus.html">Automatisation des processus</a></li>
+                        <li><a href="agents-ia-entreprise.html">Agents IA pour entreprise</a></li>
+                        <li><a href="visibilite-ia-geo.html">Visibilité dans les IA (GEO)</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>L'agence</h4>
+                    <ul>
+                        <li><a href="index.html#methode">Notre méthode</a></li>
+                        <li><a href="index.html#pour-qui">Pour qui</a></li>
+                        <li><a href="index.html#faq">Questions fréquentes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:daelia.partners@gmail.com">daelia.partners@gmail.com</a></li>
+                        <li><a href="contact.html">Parler de mon projet</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Dina Studio 2026 - Tous droits réservés · <a href="mentions-legales.html" style="color:inherit;">Mentions légales</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var entDrawer = document.getElementById('entDrawer');
+        var entBackdrop = document.getElementById('entDrawerBackdrop');
+        function openDrawer() { entDrawer.classList.add('open'); entBackdrop.classList.add('open'); }
+        function closeDrawer() { entDrawer.classList.remove('open'); entBackdrop.classList.remove('open'); }
+        document.getElementById('entBurger').addEventListener('click', openDrawer);
+        document.getElementById('entDrawerClose').addEventListener('click', closeDrawer);
+        entBackdrop.addEventListener('click', closeDrawer);
+        entDrawer.querySelectorAll('a').forEach(function (a) {
+            a.addEventListener('click', closeDrawer);
+        });
+        var obs = new IntersectionObserver(function (entries) {
+            entries.forEach(function (e) {
+                if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); }
+            });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.reveal').forEach(function (el) { obs.observe(el); });
+    </script>
+    <script src="ui.js"></script>
+</body>
+</html>
