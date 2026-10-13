@@ -2730,3 +2730,6 @@ a:focus-visible, button:focus-visible, .btn:focus-visible, input:focus-visible, 
 @media (prefers-reduced-motion: reduce) {
     .dn-robot, .dn-notice, .dn-orbites span, .dn-orbites i { animation: none; }
 }
+
+.dn-groupe { margin: 52px 0 0; font-size: 14px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; color: var(--orange-ink); }
+.dn-groupe + .ent-grid { margin-top: 22px; }

@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo d&#x27;entreprise et création audio : produits, locaux, spots, jingles — Dina Studio</title>
+    <meta name="description" content="Dina Studio réalise vos photos de produits, de locaux et d&#x27;équipe, et crée vos contenus audio : spots publicitaires, voix off, jingles et messages d&#x27;attente téléphonique.">
+    <link rel="canonical" href="https://dina-studio.fr/photo-audio.html"/>
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Photo d&#x27;entreprise et création audio : produits, locaux, spots, jingles — Dina Studio">
+    <meta property="og:description" content="Dina Studio réalise vos photos de produits, de locaux et d&#x27;équipe, et crée vos contenus audio : spots publicitaires, voix off, jingles et messages d&#x27;attente téléphonique.">
+    <meta property="og:url" content="https://dina-studio.fr/photo-audio.html">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="apple-touch-icon" type="image/png" sizes="192x192" href="./logo/icon-192x192.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Photo et audio",
+    "serviceType": "Photo et audio",
+    "provider": {
+        "@type": "ProfessionalService",
+        "name": "Dina Studio",
+        "url": "https://dina-studio.fr"
+    },
+    "areaServed": {
+        "@type": "Country",
+        "name": "France"
+    },
+    "description": "Dina Studio réalise vos photos de produits, de locaux et d'équipe, et crée vos contenus audio : spots publicitaires, voix off, jingles et messages d'attente téléphonique.",
+    "url": "https://dina-studio.fr/photo-audio.html"
+}
+    </script>
+    <script type="application/ld+json">
+{
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+        {
+            "@type": "Question",
+            "name": "Vous déplacez-vous chez nous ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oui en Île-de-France. Ailleurs, vos produits peuvent nous être envoyés pour la prise de vue, et tout l'audio se fait à distance."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Combien de photos vais-je recevoir ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Le nombre est fixé dans la proposition, selon vos besoins. Vous recevez uniquement des photos retouchées et utilisables."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Puis-je utiliser les photos partout ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oui. Les droits d'utilisation pour votre communication sont précisés dans la proposition : site, réseaux sociaux, publicités, impressions."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Qui enregistre la voix ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Vous choisissez parmi plusieurs voix, ou vous enregistrez la vôtre. Vous écoutez le résultat avant la livraison."
+            }
+        },
+        {
+            "@type": "Question",
+            "name": "Pouvez-vous retoucher nos photos existantes ?",
+            "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Oui. Recadrage, lumière, détourage, harmonisation des couleurs : on peut partir de ce que vous avez déjà."
+            }
+        }
+    ]
+}
+    </script>
+</head>
+<body>
+    <header class="ent-header">
+        <div class="container">
+            <a href="index.html" class="ent-logo" aria-label="Dina Studio"><span class="ent-logo-text">Dina<span>Studio</span></span></a>
+            <nav class="ent-nav">
+                <a href="index.html">Accueil</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#methode">Méthode</a>
+                <a href="index.html#faq">Questions</a>
+            </nav>
+            <div class="ent-actions">
+                <a href="contact.html" class="btn btn-primary">Parler de mon projet</a>
+            </div>
+            <button class="ent-burger" id="entBurger" aria-label="Menu"><span></span><span></span><span></span></button>
+        </div>
+    </header>
+
+    <div class="ent-drawer" id="entDrawer">
+        <div class="ent-drawer-head">
+            <span class="ent-logo-text">Dina<span>Studio</span></span>
+            <button class="ent-drawer-close" id="entDrawerClose" aria-label="Fermer">&times;</button>
+        </div>
+        <nav class="ent-drawer-nav">
+            <a href="index.html">Accueil</a>
+                <a href="index.html#services">Services</a>
+                <a href="index.html#methode">Méthode</a>
+                <a href="index.html#faq">Questions</a>
+        </nav>
+        <div class="ent-drawer-foot">
+            <a href="contact.html" class="btn btn-primary ent-drawer-partner">Parler de mon projet</a>
+        </div>
+    </div>
+    <div class="ent-drawer-backdrop" id="entDrawerBackdrop"></div>
+
+    <nav class="ent-bottom-nav">
+        <a href="index.html" class="ent-bn-item"><span class="ent-bn-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/></svg></span><span class="ent-bn-label">Accueil</span></a>
+        <a href="index.html#services" class="ent-bn-item"><span class="ent-bn-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg></span><span class="ent-bn-label">Services</span></a>
+        <a href="contact.html" class="ent-bn-item"><span class="ent-bn-ico"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/><path d="M22 6l-10 7L2 6"/></svg></span><span class="ent-bn-label">Contact</span></a>
+    </nav>
+
+    <section class="ent-hero dn-hero">
+        <div class="container">
+            <div class="dn-texte">
+            <h1 class="ent-eyebrow">Photo · Audio</h1>
+            <h2 class="ent-hero-title">Des images et des sons<br><span>qui vous ressemblent.</span></h2>
+            <p>De vraies photos de vos produits, de vos locaux et de votre équipe, et des contenus audio à votre nom : spot publicitaire, voix, jingle, message d&#x27;attente. Tout ce qui manque souvent à un site ou à une campagne.</p>
+            <div class="ent-cta-row">
+                <a href="contact.html" class="btn btn-primary">Parler de mon projet</a>
+                <a href="#prestations" class="btn btn-ghost">Voir ce qu'on fait</a>
+            </div>
+            </div>
+            <div class="dn-visuel" aria-hidden="true">
+                <div class="dn-orbites"><span></span><span></span><span></span><i></i><i></i><i></i></div>
+                <div class="dn-robot">
+                    <img src="robot/robot-photo.webp" alt="" width="600" height="900" class="dn-robot-img actif">
+                </div>
+                <div class="dn-notice dn-n1"><span class="dn-pastille"></span><span class="dn-notice-texte"><strong>Séance terminée</strong><small>Quarante photos retouchées</small></span></div>
+                <div class="dn-notice dn-n2"><span class="dn-pastille"></span><span class="dn-notice-texte"><strong>Spot enregistré</strong><small>Vingt secondes · prêt à diffuser</small></span></div>
+                <div class="dn-notice dn-n3"><span class="dn-pastille"></span><span class="dn-notice-texte"><strong>Jingle validé</strong><small>Votre signature sonore</small></span></div>
+                <div class="dn-mode">
+                    <div class="dn-mode-pilule"><span class="dn-pastille-ronde"></span>Mode : <b>Photo et audio</b></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ent-section">
+        <div class="container ent-center">
+            <span class="ent-eyebrow reveal">C'est quoi ?</span>
+            <h2 class="reveal">Vos propres <span>images et sons</span></h2>
+            <p class="ent-lead reveal">Les photos de banque d&#x27;images se repèrent tout de suite, et vos clients les ont déjà vues ailleurs. Vos propres photos montrent ce que vous faites vraiment. Même chose pour le son : une voix et quelques notes reconnaissables suffisent pour qu&#x27;on vous identifie à la radio, dans une vidéo ou au téléphone.</p>
+        </div>
+    </section>
+
+    <section class="ent-section ent-white" id="prestations">
+        <div class="container ent-center">
+            <span class="ent-eyebrow reveal">Ce qu&#x27;on réalise</span>
+            <h2 class="reveal">Côté image, <span>côté son</span></h2>
+            <div class="ent-grid cols-3">
+                <div class="ent-card reveal">
+                    <div class="ico">📦</div>
+                    <h3>Photos de produits</h3>
+                    <p>Sur fond uni ou en situation, détourées et prêtes pour votre site, votre catalogue ou vos publicités.</p>
+                </div>
+                <div class="ent-card reveal">
+                    <div class="ico">🏠</div>
+                    <h3>Photos de locaux</h3>
+                    <p>Votre boutique, votre atelier, votre salle ou vos bureaux, pour que l&#x27;on sache où l&#x27;on met les pieds.</p>
+                </div>
+                <div class="ent-card reveal">
+                    <div class="ico">🧑‍🤝‍🧑</div>
+                    <h3>Portraits et équipe</h3>
+                    <p>Des portraits cohérents entre eux pour la page « Qui sommes-nous » et les signatures d&#x27;e-mail.</p>
+                </div>
+                <div class="ent-card reveal">
+                    <div class="ico">📻</div>
+                    <h3>Spots audio</h3>
+                    <p>Un message publicitaire écrit, enregistré et monté, pour la radio locale ou la publicité en ligne.</p>
+                </div>
+                <div class="ent-card reveal">
+                    <div class="ico">🎤</div>
+                    <h3>Voix et messages d&#x27;attente</h3>
+                    <p>Voix off pour vos vidéos, annonce d&#x27;accueil et message d&#x27;attente de votre standard téléphonique.</p>
+                </div>
+                <div class="ent-card reveal">
+                    <div class="ico">🎵</div>
+                    <h3>Jingles et identité sonore</h3>
+                    <p>Quelques secondes de musique qui reviennent dans toutes vos vidéos et tous vos spots.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ent-section">
+        <div class="container ent-center">
+            <span class="ent-eyebrow reveal">Dans votre métier</span>
+            <h2 class="reveal">Trois exemples <span>concrets</span></h2>
+            <div class="ent-grid cols-3">
+                <div class="ent-card reveal">
+                    <div class="ico">🍽️</div>
+                    <h3>Restaurants et traiteurs</h3>
+                    <p>Vos plats et votre salle photographiés pour la carte, le site et les plateformes de réservation.</p>
+                </div>
+                <div class="ent-card reveal">
+                    <div class="ico">🔧</div>
+                    <h3>Artisans du bâtiment</h3>
+                    <p>Vos chantiers terminés mis en valeur, pour illustrer vos devis et votre site.</p>
+                </div>
+                <div class="ent-card reveal">
+                    <div class="ico">💇</div>
+                    <h3>Instituts de beauté et bien-être</h3>
+                    <p>Vos cabines, vos soins et votre équipe, avec une annonce d&#x27;accueil soignée au téléphone.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ent-section ent-white">
+        <div class="container ent-center">
+            <span class="ent-eyebrow reveal">La méthode</span>
+            <h2 class="reveal">Comment <span>on procède</span></h2>
+            <div class="ent-grid cols-4 ent-steps">
+                <div class="ent-card ent-step reveal" data-num="01">
+                    <div class="num">01</div>
+                    <h3>On liste vos besoins</h3>
+                    <p>Quelles images, quels sons, pour quel usage : site, publicité, catalogue, téléphone.</p>
+                </div>
+                <div class="ent-card ent-step reveal" data-num="02">
+                    <div class="num">02</div>
+                    <h3>On prépare la séance</h3>
+                    <p>Repérage, liste des prises de vue ou texte du spot, que vous validez avant.</p>
+                </div>
+                <div class="ent-card ent-step reveal" data-num="03">
+                    <div class="num">03</div>
+                    <h3>On produit</h3>
+                    <p>Prise de vue ou enregistrement, puis retouche, montage et mixage.</p>
+                </div>
+                <div class="ent-card ent-step reveal" data-num="04">
+                    <div class="num">04</div>
+                    <h3>On vous remet les fichiers</h3>
+                    <p>Chaque photo et chaque son, aux bons formats et rangés par usage.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ent-section" id="faq">
+        <div class="container ent-center">
+            <span class="ent-eyebrow reveal">Questions fréquentes</span>
+            <h2 class="reveal">Ce qu'on <span>nous demande</span></h2>
+            <div class="ent-faq">
+                <details class="reveal"><summary>Vous déplacez-vous chez nous ?</summary><p>Oui en Île-de-France. Ailleurs, vos produits peuvent nous être envoyés pour la prise de vue, et tout l&#x27;audio se fait à distance.</p></details>
+                <details class="reveal"><summary>Combien de photos vais-je recevoir ?</summary><p>Le nombre est fixé dans la proposition, selon vos besoins. Vous recevez uniquement des photos retouchées et utilisables.</p></details>
+                <details class="reveal"><summary>Puis-je utiliser les photos partout ?</summary><p>Oui. Les droits d&#x27;utilisation pour votre communication sont précisés dans la proposition : site, réseaux sociaux, publicités, impressions.</p></details>
+                <details class="reveal"><summary>Qui enregistre la voix ?</summary><p>Vous choisissez parmi plusieurs voix, ou vous enregistrez la vôtre. Vous écoutez le résultat avant la livraison.</p></details>
+                <details class="reveal"><summary>Pouvez-vous retoucher nos photos existantes ?</summary><p>Oui. Recadrage, lumière, détourage, harmonisation des couleurs : on peut partir de ce que vous avez déjà.</p></details>
+            </div>
+        </div>
+    </section>
+
+    <section class="ent-section ent-white">
+        <div class="container ent-center">
+            <span class="ent-eyebrow reveal">Voir aussi</span>
+            <h2 class="reveal">Les autres <span>services</span></h2>
+            <div class="ent-grid cols-4">
+                <div class="ent-card ent-levier reveal">
+                    <div class="ico">🎯</div>
+                    <h3>Publicité en ligne</h3>
+                    <p>Campagnes Google Ads, Meta Ads et TikTok Ads : on crée les annonces, on règle le ciblage et on suit ce que chaque euro rapporte.</p>
+                    <a href="publicite-en-ligne.html" class="btn btn-ghost">En savoir plus →</a>
+                </div>
+                <div class="ent-card ent-levier reveal">
+                    <div class="ico">🎬</div>
+                    <h3>Contenus réseaux sociaux</h3>
+                    <p>Des vidéos courtes animées, des carrousels et des images à vos couleurs, créés sans caméra. Il ne vous reste qu&#x27;à publier.</p>
+                    <a href="contenus-reseaux-sociaux.html" class="btn btn-ghost">En savoir plus →</a>
+                </div>
+                <div class="ent-card ent-levier reveal">
+                    <div class="ico">🎞️</div>
+                    <h3>Motion design et vidéo</h3>
+                    <p>Vidéo de présentation, film publicitaire animé, logo qui prend vie : des images qui expliquent votre offre en quelques secondes.</p>
+                    <a href="motion-design-video.html" class="btn btn-ghost">En savoir plus →</a>
+                </div>
+                <div class="ent-card ent-levier reveal">
+                    <div class="ico">💻</div>
+                    <h3>Sites web et applications</h3>
+                    <p>Site vitrine, boutique en ligne, application mobile ou outil interne : on conçoit, on développe et on maintient.</p>
+                    <a href="sites-web-applications.html" class="btn btn-ghost">En savoir plus →</a>
+                </div>
+                <div class="ent-card ent-levier reveal">
+                    <div class="ico">⚙️</div>
+                    <h3>Automatisation des processus</h3>
+                    <p>Devis, relances, rendez-vous, rappels : on relie vos outils pour que les tâches répétitives se fassent toutes seules.</p>
+                    <a href="automatisation-processus.html" class="btn btn-ghost">En savoir plus →</a>
+                </div>
+                <div class="ent-card ent-levier reveal">
+                    <div class="ico">🤖</div>
+                    <h3>Agents IA pour entreprise</h3>
+                    <p>Des assistants qui trient les demandes, lisent vos documents et avancent le travail de vos salariés, sous votre contrôle.</p>
+                    <a href="agents-ia-entreprise.html" class="btn btn-ghost">En savoir plus →</a>
+                </div>
+                <div class="ent-card ent-levier reveal">
+                    <div class="ico">✨</div>
+                    <h3>Visibilité dans les IA (GEO)</h3>
+                    <p>Faire en sorte que ChatGPT, Gemini et Perplexity comprennent votre entreprise et puissent la citer.</p>
+                    <a href="visibilite-ia-geo.html" class="btn btn-ghost">En savoir plus →</a>
+                </div>
+                <div class="ent-card ent-levier reveal">
+                    <div class="ico">🔬</div>
+                    <h3>Audit et conseil</h3>
+                    <p>On examine vos publicités, vos outils ou votre présence en ligne, et on vous dit quoi corriger en premier.</p>
+                    <a href="audit-conseil.html" class="btn btn-ghost">En savoir plus →</a>
+                </div>
+                <div class="ent-card ent-levier reveal">
+                    <div class="ico">🎓</div>
+                    <h3>Formations</h3>
+                    <p>IA, publicité en ligne, réseaux sociaux : des formations pratiques pour vous et vos équipes, sur place ou à distance.</p>
+                    <a href="formations.html" class="btn btn-ghost">En savoir plus →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ent-cta" id="contact">
+        <div class="container">
+            <h2 class="reveal">Besoin de photos ou d&#x27;un spot ?</h2>
+            <p class="reveal">Dites-nous ce qu&#x27;il vous faut et pour quel usage. On vous propose une séance ou une production adaptée.</p>
+            <div class="ent-cta-row reveal">
+                <a href="contact.html" class="btn btn-primary">Parler de mon projet</a>
+                <a href="index.html#services" class="btn btn-ghost">Voir tous les services</a>
+            </div>
+            <div class="ent-guar reveal">
+                <span>Un seul interlocuteur</span>
+                <span>Proposition écrite avant de commencer</span>
+                <span>Vous validez chaque étape</span>
+                <span>Partout en France</span>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <span class="ent-logo-text">Dina<span>Studio</span></span>
+                    <p>L'agence qui s'occupe de vos publicités, de vos publications et de vos tâches répétitives. Pour les petites et moyennes entreprises, partout en France.</p>
+                </div>
+                <div class="footer-col">
+                    <h4>Services</h4>
+                    <ul>
+                        <li><a href="publicite-en-ligne.html">Publicité en ligne</a></li>
+                        <li><a href="contenus-reseaux-sociaux.html">Contenus réseaux sociaux</a></li>
+                        <li><a href="motion-design-video.html">Motion design et vidéo</a></li>
+                        <li><a href="photo-audio.html">Photo et audio</a></li>
+                        <li><a href="sites-web-applications.html">Sites web et applications</a></li>
+                        <li><a href="automatisation-processus.html">Automatisation des processus</a></li>
+                        <li><a href="agents-ia-entreprise.html">Agents IA pour entreprise</a></li>
+                        <li><a href="visibilite-ia-geo.html">Visibilité dans les IA (GEO)</a></li>
+                        <li><a href="audit-conseil.html">Audit et conseil</a></li>
+                        <li><a href="formations.html">Formations</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>L'agence</h4>
+                    <ul>
+                        <li><a href="index.html#methode">Notre méthode</a></li>
+                        <li><a href="index.html#pour-qui">Pour qui</a></li>
+                        <li><a href="index.html#faq">Questions fréquentes</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li><a href="mailto:daelia.partners@gmail.com">daelia.partners@gmail.com</a></li>
+                        <li><a href="contact.html">Parler de mon projet</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; Dina Studio 2026 - Tous droits réservés · <a href="mentions-legales.html" style="color:inherit;">Mentions légales</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        var entDrawer = document.getElementById('entDrawer');
+        var entBackdrop = document.getElementById('entDrawerBackdrop');
+        function openDrawer() { entDrawer.classList.add('open'); entBackdrop.classList.add('open'); }
+        function closeDrawer() { entDrawer.classList.remove('open'); entBackdrop.classList.remove('open'); }
+        document.getElementById('entBurger').addEventListener('click', openDrawer);
+        document.getElementById('entDrawerClose').addEventListener('click', closeDrawer);
+        entBackdrop.addEventListener('click', closeDrawer);
+        entDrawer.querySelectorAll('a').forEach(function (a) {
+            a.addEventListener('click', closeDrawer);
+        });
+        var obs = new IntersectionObserver(function (entries) {
+            entries.forEach(function (e) {
+                if (e.isIntersecting) { e.target.classList.add('in'); obs.unobserve(e.target); }
+            });
+        }, { threshold: 0.12 });
+        document.querySelectorAll('.reveal').forEach(function (el) { obs.observe(el); });
+    </script>
+    <script src="ui.js"></script>
+</body>
+</html>
